@@ -14,6 +14,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
     
+    // Resisterボタンを押したときの処理
     @IBAction private func didTapSignUpButton() {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
@@ -31,7 +32,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
-    
+    // エラー表示
     private func showErrorIfNeeded(_ errorOrNil: Error?) {
         // エラーがなければ何もしません
         guard let error = errorOrNil else { return }
@@ -42,9 +43,12 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         present(alert, animated: true, completion: nil)
     }
 
+    // 新規登録
     private func signUp(email: String, password: String, name: String) {
-        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
+        Auth.auth().createUser(withEmail: email, password: password) {
+            [weak self] result, error in
             guard let self = self else { return }
+            
             if let user = result?.user {
                 self.updateDisplayName(name, of: user)
             }
@@ -52,6 +56,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
+    
     private func updateDisplayName(_ name: String, of user: User) {
         let request = user.createProfileChangeRequest()
         request.displayName = name

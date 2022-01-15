@@ -19,7 +19,8 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
             guard let self = self else { return }
             if let user = result?.user {
-                // サインイン後の画面へ
+                //パスワードがあっていたらログインし、画面遷移する
+                self.performSegue(withIdentifier: "toUserView", sender: nil)
             }
             self.showErrorIfNeeded(error)
         }

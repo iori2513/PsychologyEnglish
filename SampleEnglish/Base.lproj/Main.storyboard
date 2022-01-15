@@ -148,6 +148,22 @@
             </objects>
             <point key="canvasLocation" x="-771" y="-1225"/>
         </scene>
+        <!--UserViewController-->
+        <scene sceneID="A6j-wM-zke">
+            <objects>
+                <viewController storyboardIdentifier="uvc" title="UserViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cUR-Yx-IBq" customClass="UserViewController" customModule="SampleEnglish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hqZ-Bx-Qfu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Cpb-li-KSM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uea-C2-Mpg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFb-DA-znO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="-1226"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -346,6 +362,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="sOf-D8-WyP" id="B0u-zs-Ra5"/>
                         <outlet property="passwordTextField" destination="IcC-fu-qrl" id="88H-Sj-mdV"/>
+                        <segue destination="cUR-Yx-IBq" kind="show" identifier="toUserView" id="a9z-Ke-cNq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNT-CE-raN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

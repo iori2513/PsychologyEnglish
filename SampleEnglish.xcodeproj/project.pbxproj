@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D83E46B39D8D807CEB4937B /* Pods_SampleEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB83B1D8D1CBFBAB546B32D /* Pods_SampleEnglish.framework */; };
 		765FA1B9276E29A2001FF3DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */; };
+		76A5B9C6279337FD003CBD0A /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5B9C5279337FD003CBD0A /* UserViewController.swift */; };
 		76B118DE2783D72100EC6CAF /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B118DD2783D72100EC6CAF /* FirebaseAuth.framework */; };
 		76B118E22783D72800EC6CAF /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B118E12783D72800EC6CAF /* FirebaseCore.framework */; };
 		76B118E42783D73600EC6CAF /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765FA1CA276F9F8F001FF3DC /* FirebaseAnalytics.xcframework */; };
@@ -30,6 +31,7 @@
 		765FA1C4276F9F67001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765FA1C7276F9F70001FF3DC /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765FA1CA276F9F8F001FF3DC /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
+		76A5B9C5279337FD003CBD0A /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		76B118DD2783D72100EC6CAF /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B118E12783D72800EC6CAF /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B118E62783EE6700EC6CAF /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				76DADB5C27898EEB00048E1B /* ForgetViewController.swift */,
 				76B118E62783EE6700EC6CAF /* LogInViewController.swift */,
 				76D8616C271BCFD2007853BA /* SignUpViewController.swift */,
+				76A5B9C5279337FD003CBD0A /* UserViewController.swift */,
 				76D86161271BCEC8007853BA /* Assets.xcassets */,
 				76D86163271BCEC8007853BA /* LaunchScreen.storyboard */,
 				76D86166271BCEC8007853BA /* Info.plist */,
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A5B9C6279337FD003CBD0A /* UserViewController.swift in Sources */,
 				76D8616D271BCFD2007853BA /* SignUpViewController.swift in Sources */,
 				76D8615D271BCEC3007853BA /* ViewController.swift in Sources */,
 				76D86159271BCEC3007853BA /* AppDelegate.swift in Sources */,
