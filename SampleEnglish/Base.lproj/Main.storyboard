@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="54" y="-1226"/>
         </scene>
-        <!--View Controller-->
+        <!--FirstViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleEnglish" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="FirstViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="FirstViewController" customModule="SampleEnglish" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

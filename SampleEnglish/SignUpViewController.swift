@@ -28,7 +28,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        keyboardShow()
+        usernameTextField.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -83,18 +85,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         // 完了したことを表示する
     }
     
-    private func keyboardShow() {
-        // キーボードを出す
-        usernameTextField.becomeFirstResponder()
-        emailTextField.becomeFirstResponder()
-        passwordTextField.becomeFirstResponder()
-        // Enterを押したらキーボードが閉じる
-        usernameTextField.delegate = self
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
-        
-    }
     
+    // Enterを押したらキーボードが閉じる
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
