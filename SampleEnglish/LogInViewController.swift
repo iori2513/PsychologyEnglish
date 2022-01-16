@@ -20,7 +20,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
             guard let self = self else { return }
             if let user = result?.user {
                 //パスワードがあっていたらログインし、画面遷移する
-                self.performSegue(withIdentifier: "toUserView", sender: nil)
+                self.performSegue(withIdentifier: "toHome", sender: nil)
             }
             self.showErrorIfNeeded(error)
         }

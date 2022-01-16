@@ -1,5 +1,5 @@
 //
-//  UserViewController.swift
+//  HomeViewController.swift
 //  SampleEnglish
 //
 //  Created by 中田伊織 on 2022/01/16.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-class UserViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
+    
     
 
     /*
