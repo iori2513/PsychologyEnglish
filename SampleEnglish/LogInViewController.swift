@@ -26,8 +26,8 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // エラーが起きた時に行う処理
     private func showErrorIfNeeded(_ errorOrNil: Error?) {
-        // エラーがなければ何もしません
         guard let error = errorOrNil else { return }
         
         let message = errorMessage(of: error) // エラーメッセージを取得
@@ -36,6 +36,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         present(alert, animated: true, completion: nil)
     }
 
+    // エラーメッセージを表示
     private func errorMessage(of error: Error) -> String {
         var message = "エラーが発生しました"
         guard let errcd = AuthErrorCode(rawValue: (error as NSError).code) else {
@@ -64,6 +65,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    // エンター押したらキーボードを閉じる
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

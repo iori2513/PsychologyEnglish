@@ -1,25 +1,24 @@
 //
-//  HomeViewController.swift
+//  NavigationController.swift
 //  SampleEnglish
 //
-//  Created by 中田伊織 on 2022/01/16.
+//  Created by 中田伊織 on 2022/01/18.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class NavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         hideNavigationBar()
+
         // Do any additional setup after loading the view.
     }
     
     func hideNavigationBar() {
-        let nvController = NavigationController()
-//        self.navigationController?.setNavigationBarHidden(true, animated: true)
-        
-        
+        let homeViewController = HomeViewController()
+        homeViewController.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
 

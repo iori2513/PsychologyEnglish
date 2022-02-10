@@ -343,7 +343,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="sOf-D8-WyP" id="B0u-zs-Ra5"/>
                         <outlet property="passwordTextField" destination="IcC-fu-qrl" id="88H-Sj-mdV"/>
-                        <segue destination="BYH-n2-ARy" kind="show" identifier="toHome" id="vAc-wF-mhq"/>
+                        <segue destination="BYH-n2-ARy" kind="show" identifier="toHome" id="3s2-Qv-5Aq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNT-CE-raN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -488,7 +488,7 @@
         <!--Navigation Controller-->
         <scene sceneID="2g5-Xr-Utz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zMQ-8K-IWk" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zMQ-8K-IWk" customClass="NavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JHE-Vn-elI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

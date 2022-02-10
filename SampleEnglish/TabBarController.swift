@@ -12,19 +12,26 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setTabBar()
+        
+        // ナビゲーションバーを非表示にする
+        navigationController?.setNavigationBarHidden(true, animated: false)
 
         // Do any additional setup after loading the view.
     }
     
     // タブバーを実装する
     func setTabBar() {
+        // ViewControllerの変数の設定
         let homeViewController = HomeViewController()
         let secondViewController = SecondViewController()
+        
+        // タブバーの詳細の設定
         homeViewController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "home"), tag: 0)
         homeViewController.view.backgroundColor = .white
         secondViewController.tabBarItem = UITabBarItem(title: "second", image: .none, tag: 0)
         secondViewController.view.backgroundColor = .white
         
+        // Viewcontrollerを配列に入れ実装
         viewControllers = [homeViewController, secondViewController]
         setViewControllers(viewControllers, animated: true)
     }
