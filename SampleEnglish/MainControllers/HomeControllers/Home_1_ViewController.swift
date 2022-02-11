@@ -44,8 +44,8 @@ class Home_1_ViewController: UIViewController, UICollectionViewDelegate, UIColle
     //セル選択時の処理
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
-        //指定の遷移先に遷移する（最低限の処理）
-        performSegue(withIdentifier: "指定のIdentifier", sender: nil)
+        // 画面遷移
+        performSegue(withIdentifier: "goNext", sender: nil)
     }
 
     

@@ -30,8 +30,8 @@ class ForgetViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    // エラーが出た際の処理
     private func showErrorIfNeeded(_ errorOrNil: Error?) {
-        // エラーがなければ何もしません
         guard let error = errorOrNil else { return }
 
         let message = "エラーが起きました"

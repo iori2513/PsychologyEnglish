@@ -543,6 +543,7 @@
                     <navigationItem key="navigationItem" id="kvh-Rk-tLK"/>
                     <connections>
                         <outlet property="collectionView" destination="HoL-tU-ebM" id="lGW-Ca-GX9"/>
+                        <segue destination="aZc-TT-bE0" kind="show" identifier="goNext" id="ZAX-nl-sLf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oZ-oT-BU2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -592,6 +593,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTo-8e-hZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1588" y="-1225.6371814092954"/>
+        </scene>
+        <!--Home_2_ViewController-->
+        <scene sceneID="0sM-rU-RpU">
+            <objects>
+                <viewController title="Home_2_ViewController" id="aZc-TT-bE0" customClass="Home_2_ViewController" customModule="SampleEnglish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0KA-bd-KFT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Q0e-ap-I3x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6yP-il-WxD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LjQ-2O-83T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="1086"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
