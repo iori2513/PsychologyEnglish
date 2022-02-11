@@ -8,6 +8,10 @@
 import UIKit
 
 class Home_1_ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -20,28 +24,36 @@ class Home_1_ViewController: UIViewController, UICollectionViewDelegate, UIColle
         let label = cell.contentView.viewWithTag(1) as! UILabel
 
         //今回は簡易的にセルの番号をラベルのテキストに反映させる
-        label.text = "Part" + String(indexPath.row + 1)
+        label.text = "Part " + String(indexPath.row + 1)
 
         return cell
-}
-    
-    //セルのサイズを指定する処理
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
-        // 横方向のスペース調整
-        let horizontalSpace:CGFloat = 5
-
-        //セルのサイズを指定。画面上にセルを3つ表示させたいのであれば、デバイスの横幅を3分割した横幅　- セル間のスペース*2（セル間のスペースが二つあるため）
-        let cellSize:CGFloat = self.view.bounds.width/3 - horizontalSpace*2
-
-        // 正方形で返すためにwidth,heightを同じにする
-        return CGSize(width: cellSize, height: cellSize)
     }
+    
+    
+
+    // Screenサイズに応じたセルサイズを返す
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // 機種ごとの横幅の値を取ってきて、それに応じてセルの横幅を決める
+        let screen_width :CGFloat = UIScreen.main.bounds.size.width
+        
+        let image_width :CGFloat = (screen_width - 40)/4
+        let image_height :CGFloat = image_width
+        return CGSize(width: image_width, height: image_height)
+    }
+    
+    //セル選択時の処理
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+        //指定の遷移先に遷移する（最低限の処理）
+        performSegue(withIdentifier: "指定のIdentifier", sender: nil)
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // ナビゲーションバーを表示する
         navigationController?.setNavigationBarHidden(false, animated: false)
+        collectionView.delegate = self
 
     }
     
