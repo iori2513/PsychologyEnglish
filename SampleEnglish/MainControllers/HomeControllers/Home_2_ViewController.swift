@@ -9,6 +9,17 @@ import UIKit
 
 class Home_2_ViewController: UIViewController {
 
+    @IBOutlet weak var wordCount: UILabel!
+    @IBOutlet weak var mainWord: UILabel!
+    @IBOutlet weak var meaningLabel: UILabel!
+    
+    var number :Int = 1
+    
+    
+    @IBAction func goToNextWordAction(_ sender: Any) {
+        number += 1
+        wordCount.text = "No." + String(number)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
