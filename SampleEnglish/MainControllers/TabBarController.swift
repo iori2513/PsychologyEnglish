@@ -11,7 +11,6 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setTabBar()
         
         // ナビゲーションバーを非表示にする
         navigationController?.setNavigationBarHidden(true, animated: false)

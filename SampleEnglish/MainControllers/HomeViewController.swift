@@ -8,19 +8,13 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideNavigationBar()
         // Do any additional setup after loading the view.
     }
     
-    func hideNavigationBar() {
-        let nvController = NavigationController()
-//        self.navigationController?.setNavigationBarHidden(true, animated: true)
-        
-        
-    }
+    
     
 
     /*
