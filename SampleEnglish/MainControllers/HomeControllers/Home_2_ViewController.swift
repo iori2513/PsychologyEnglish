@@ -15,11 +15,28 @@ class Home_2_ViewController: UIViewController {
     
     var number :Int = 1
     
+    // csvのデータを配列に変換する
+    func csvToArray () {
+       if let csvPath = Bundle.main.path(forResource: "sample_data", ofType: "csv") {
+          do {
+             let csvStr = try String(contentsOfFile:csvPath, encoding:String.Encoding.utf8)
+             let csvArr = csvStr.components(separatedBy: .newlines)
+             print(csvArr)
+          } catch let error as NSError {
+             print(error.localizedDescription)
+          }
+       }
+    }
     
+    
+    
+    
+    // 次の単語を表示する際にNoを１ずつ増加させる
     @IBAction func goToNextWordAction(_ sender: Any) {
         number += 1
         wordCount.text = "No." + String(number)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

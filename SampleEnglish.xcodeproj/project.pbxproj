@@ -12,6 +12,7 @@
 		7699416E27B6368E0048FB12 /* Home_1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699416D27B6368E0048FB12 /* Home_1_ViewController.swift */; };
 		7699417127B636F30048FB12 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699417027B636F30048FB12 /* FirstViewController.swift */; };
 		7699417427B66BB70048FB12 /* Home_2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699417327B66BB70048FB12 /* Home_2_ViewController.swift */; };
+		7699417827B76D620048FB12 /* sample_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7699417727B76D620048FB12 /* sample_data.csv */; };
 		76A5B9CE2793CACA003CBD0A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5B9CD2793CACA003CBD0A /* TabBarController.swift */; };
 		76A5B9D02793F820003CBD0A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5B9CF2793F820003CBD0A /* HomeViewController.swift */; };
 		76A5B9D22794018E003CBD0A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5B9D12794018E003CBD0A /* SecondViewController.swift */; };
@@ -39,6 +40,7 @@
 		7699416D27B6368E0048FB12 /* Home_1_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_1_ViewController.swift; sourceTree = "<group>"; };
 		7699417027B636F30048FB12 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		7699417327B66BB70048FB12 /* Home_2_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_2_ViewController.swift; sourceTree = "<group>"; };
+		7699417727B76D620048FB12 /* sample_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_data.csv; sourceTree = "<group>"; };
 		76A5B9CD2793CACA003CBD0A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		76A5B9CF2793F820003CBD0A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		76A5B9D12794018E003CBD0A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */,
+				7699417727B76D620048FB12 /* sample_data.csv */,
 				76D86158271BCEC3007853BA /* AppDelegate.swift */,
 				76D8615A271BCEC3007853BA /* SceneDelegate.swift */,
 				76D8615E271BCEC3007853BA /* Main.storyboard */,
@@ -223,6 +226,7 @@
 				765FA1B9276E29A2001FF3DC /* GoogleService-Info.plist in Resources */,
 				76D86162271BCEC8007853BA /* Assets.xcassets in Resources */,
 				76D86160271BCEC3007853BA /* Main.storyboard in Resources */,
+				7699417827B76D620048FB12 /* sample_data.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
