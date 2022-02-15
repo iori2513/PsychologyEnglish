@@ -33,6 +33,7 @@ class Home_2_ViewController: UIViewController {
     
     //画面の初期表示の設定
     func firstSetting() {
+        csvArray = loadCSV(fileName: "sample_data")  //csvデータを読み込み、配列に変換する
         meaningLabel.isHidden = true //初めは単語の意味を非表示にする
         
     }
@@ -56,11 +57,11 @@ class Home_2_ViewController: UIViewController {
     @IBAction func goToNextWordAction(_ sender: Any) {
         if meaningLabel.isHidden == true {
             meaningLabel.isHidden = false
-            nextButton.setTitle("Next", for: .normal)
+            nextButton.setTitle("Next", for: .normal) //ボタンの文字を変える
         }
         else {
             countNumber()
-            setData()
+            setData()  //次の問題のデータを読み込む
             meaningLabel.isHidden = true
             nextButton.setTitle("Answer", for: .normal)
             
@@ -69,7 +70,6 @@ class Home_2_ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        csvArray = loadCSV(fileName: "sample_data")
         firstSetting()
 
         // Do any additional setup after loading the view.
