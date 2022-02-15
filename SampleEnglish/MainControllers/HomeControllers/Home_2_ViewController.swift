@@ -14,18 +14,20 @@ class Home_2_ViewController: UIViewController {
     @IBOutlet weak var meaningLabel: UILabel!
     
     var number :Int = 1
+    var csvArray: [String] = []
     
     // csvのデータを配列に変換する
-    func csvToArray () {
-       if let csvPath = Bundle.main.path(forResource: "sample_data", ofType: "csv") {
-          do {
-             let csvStr = try String(contentsOfFile:csvPath, encoding:String.Encoding.utf8)
-             let csvArr = csvStr.components(separatedBy: .newlines)
-             print(csvArr)
-          } catch let error as NSError {
-             print(error.localizedDescription)
-          }
-       }
+    func loadCSV(fileName: String) -> [String] {
+        let csvBundle = Bundle.main.path(forResource: fileName, ofType: "csv")!
+        do {
+            let csvData = try String(contentsOfFile: csvBundle, encoding: String.Encoding.utf8)
+            let lineChange = csvData.replacingOccurrences(of: "\r", with: "\n")
+            csvArray = lineChange.components(separatedBy: "\n")
+            csvArray.removeLast()
+        } catch {
+            print("エラー")
+        }
+        return csvArray
     }
     
     
@@ -39,6 +41,8 @@ class Home_2_ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        csvArray = loadCSV(fileName: "sample_data")
+        print(csvArray)
 
         // Do any additional setup after loading the view.
     }
