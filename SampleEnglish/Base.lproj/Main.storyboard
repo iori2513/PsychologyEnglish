@@ -620,10 +620,13 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6r-YA-j3V">
                                 <rect key="frame" x="80" y="484" width="215" height="50"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Answer">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                </buttonConfiguration>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="T0C-IJ-4N7"/>
+                                    <constraint firstAttribute="height" constant="50" id="y8C-Ad-Dh4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Answer"/>
                                 <connections>
                                     <action selector="goToNextWordAction:" destination="aZc-TT-bE0" eventType="touchUpInside" id="mMq-HW-8Xs"/>
                                 </connections>
@@ -656,6 +659,7 @@
                             <constraint firstItem="8bC-0f-r1G" firstAttribute="centerX" secondItem="0KA-bd-KFT" secondAttribute="centerX" id="Ssy-hE-XRs"/>
                             <constraint firstItem="1Ze-Dh-HG6" firstAttribute="leading" secondItem="Q0e-ap-I3x" secondAttribute="leading" constant="40" id="TNQ-vm-lbl"/>
                             <constraint firstItem="8bC-0f-r1G" firstAttribute="top" secondItem="1Ze-Dh-HG6" secondAttribute="bottom" constant="20" id="W6C-du-LSc"/>
+                            <constraint firstItem="Q6r-YA-j3V" firstAttribute="centerX" secondItem="0KA-bd-KFT" secondAttribute="centerX" id="Wfq-Ev-WGP"/>
                             <constraint firstItem="gLm-z5-iIW" firstAttribute="top" secondItem="Q0e-ap-I3x" secondAttribute="top" constant="40" id="Wlx-Fg-uMs"/>
                             <constraint firstItem="Q0e-ap-I3x" firstAttribute="trailing" secondItem="1Ze-Dh-HG6" secondAttribute="trailing" constant="40" id="bfI-UG-fQ5"/>
                             <constraint firstItem="Q0e-ap-I3x" firstAttribute="trailing" secondItem="BxW-qJ-oYk" secondAttribute="trailing" constant="50" id="jj4-cc-fif"/>
