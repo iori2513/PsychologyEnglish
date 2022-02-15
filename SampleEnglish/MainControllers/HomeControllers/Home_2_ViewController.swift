@@ -12,6 +12,7 @@ class Home_2_ViewController: UIViewController {
     @IBOutlet weak var wordCount: UILabel!
     @IBOutlet weak var mainWord: UILabel!
     @IBOutlet weak var meaningLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
     
     var number :Int = 1  //問題数を表示する際に用いた変数
     var csvArray: [String] = []  //csvデータを配列にする際に用いる空の配列
@@ -30,22 +31,40 @@ class Home_2_ViewController: UIViewController {
         return csvArray
     }
     
+    //画面の初期表示の設定
     func firstSetting() {
-        var firstData: [String] = []  //No.1の単語のデータを取得する配列を設定
-        firstData = csvArray[0].components(separatedBy: ",")  //配列にデータを挿入
-        mainWord.text = firstData[0]  //単語を表示する
-        meaningLabel.text = firstData[1] //単語の意味を表示する
-        
-        
+        meaningLabel.isHidden = true //初めは単語の意味を非表示にする
         
     }
     
+    // csvデータの単語をアプリに表示する
+    func setData() {
+        var wordData: [String] = []  //No.1の単語のデータを取得する配列を設定
+        wordData = csvArray[number - 1].components(separatedBy: ",")  //配列にデータを挿入
+        mainWord.text = wordData[0]  //単語を表示する
+        meaningLabel.text = wordData[1] //単語の意味を表示する
+        
+    }
     
-    
-    // 次の単語を表示する際に問題数No.を1増やす
-    @IBAction func goToNextWordAction(_ sender: Any) {
+    // 問題数を数える
+    func countNumber() {
         number += 1
         wordCount.text = "No." + String(number)
+    }
+    
+    //NextボタンまたはAnswerボタンを押した際の処理
+    @IBAction func goToNextWordAction(_ sender: Any) {
+        if meaningLabel.isHidden == true {
+            meaningLabel.isHidden = false
+            nextButton.setTitle("Next", for: .normal)
+        }
+        else {
+            countNumber()
+            setData()
+            meaningLabel.isHidden = true
+            nextButton.setTitle("Answer", for: .normal)
+            
+        }
     }
     
     override func viewDidLoad() {

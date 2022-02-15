@@ -621,7 +621,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6r-YA-j3V">
                                 <rect key="frame" x="80" y="484" width="215" height="50"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                <buttonConfiguration key="configuration" style="plain" title="Answer">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -668,6 +668,7 @@
                     <connections>
                         <outlet property="mainWord" destination="BxW-qJ-oYk" id="Kns-px-LHC"/>
                         <outlet property="meaningLabel" destination="8bC-0f-r1G" id="f4C-nJ-kLz"/>
+                        <outlet property="nextButton" destination="Q6r-YA-j3V" id="KcN-iL-5cr"/>
                         <outlet property="wordCount" destination="gLm-z5-iIW" id="CFR-eT-pzX"/>
                     </connections>
                 </viewController>
