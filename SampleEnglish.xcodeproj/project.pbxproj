@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D83E46B39D8D807CEB4937B /* Pods_SampleEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB83B1D8D1CBFBAB546B32D /* Pods_SampleEnglish.framework */; };
 		764F12BA27BB6EE2003BFBF9 /* sample_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 764F12B927BB6EE2003BFBF9 /* sample_data.csv */; };
+		764F12BC27BCDEFD003BFBF9 /* Home_3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F12BB27BCDEFD003BFBF9 /* Home_3_ViewController.swift */; };
 		765FA1B9276E29A2001FF3DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */; };
 		7699416E27B6368E0048FB12 /* Home_1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699416D27B6368E0048FB12 /* Home_1_ViewController.swift */; };
 		7699417127B636F30048FB12 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699417027B636F30048FB12 /* FirstViewController.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		2D05823F05BB48A86150CF4C /* Pods-SampleEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleEnglish.debug.xcconfig"; path = "Target Support Files/Pods-SampleEnglish/Pods-SampleEnglish.debug.xcconfig"; sourceTree = "<group>"; };
 		764F12B927BB6EE2003BFBF9 /* sample_data.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_data.csv; sourceTree = "<group>"; };
+		764F12BB27BCDEFD003BFBF9 /* Home_3_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_3_ViewController.swift; sourceTree = "<group>"; };
 		765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		765FA1C0276F9F62001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765FA1C4276F9F67001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 			children = (
 				7699416D27B6368E0048FB12 /* Home_1_ViewController.swift */,
 				7699417327B66BB70048FB12 /* Home_2_ViewController.swift */,
+				764F12BB27BCDEFD003BFBF9 /* Home_3_ViewController.swift */,
 			);
 			path = HomeControllers;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				7699417427B66BB70048FB12 /* Home_2_ViewController.swift in Sources */,
 				76D86159271BCEC3007853BA /* AppDelegate.swift in Sources */,
 				7699417127B636F30048FB12 /* FirstViewController.swift in Sources */,
+				764F12BC27BCDEFD003BFBF9 /* Home_3_ViewController.swift in Sources */,
 				76A5B9D22794018E003CBD0A /* SecondViewController.swift in Sources */,
 				7699416E27B6368E0048FB12 /* Home_1_ViewController.swift in Sources */,
 				76A5B9D02793F820003CBD0A /* HomeViewController.swift in Sources */,
