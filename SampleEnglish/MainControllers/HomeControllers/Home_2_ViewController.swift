@@ -16,6 +16,7 @@ class Home_2_ViewController: UIViewController {
     
     var number :Int = 1  //問題数を表示する際に用いた変数
     var csvArray: [String] = []  //csvデータを配列にする際に用いる空の配列
+    var arrayNumber :Int = 0 //csvデータの要素数を数える変数
     
     // csvのデータを配列に変換する
     func loadCSV(fileName: String) -> [String] {
@@ -31,9 +32,10 @@ class Home_2_ViewController: UIViewController {
         return csvArray
     }
     
-    //画面の初期表示の設定
+    //初期設定
     func firstSetting() {
         csvArray = loadCSV(fileName: "sample_data")  //csvデータを読み込み、配列に変換する
+        arrayNumber = csvArray.count
         meaningLabel.isHidden = true //初めは単語の意味を非表示にする
         
     }
@@ -55,17 +57,29 @@ class Home_2_ViewController: UIViewController {
     
     //NextボタンまたはAnswerボタンを押した際の処理
     @IBAction func goToNextWordAction(_ sender: Any) {
-        if meaningLabel.isHidden == true {
-            meaningLabel.isHidden = false
-            nextButton.setTitle("Next", for: .normal) //ボタンの文字を変える
+        if number < arrayNumber {
+            if meaningLabel.isHidden == true {
+                meaningLabel.isHidden = false
+                nextButton.setTitle("Next", for: .normal) //ボタンの文字を変える
+            }
+            else {
+                meaningLabel.isHidden = true
+                countNumber()
+                setData()  //次の問題のデータを読み込む
+                nextButton.setTitle("Answer", for: .normal)
+            }
         }
         else {
-            countNumber()
-            setData()  //次の問題のデータを読み込む
-            meaningLabel.isHidden = true
-            nextButton.setTitle("Answer", for: .normal)
-            
+            if meaningLabel.isHidden == true {
+                meaningLabel.isHidden = false
+                nextButton.setTitle("Finish!", for: .normal) //ボタンの文字を変える
+            }
+            else {
+                //単語を全て表示したら次の画面へ移行
+                performSegue(withIdentifier: "result", sender: nil)
+            }
         }
+        
     }
     
     override func viewDidLoad() {
