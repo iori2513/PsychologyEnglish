@@ -7,8 +7,25 @@
 
 import UIKit
 
-class Home_3_ViewController: UIViewController {
-
+class Home_3_ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var checkedWordTableView: UITableView!
+    
+    var cellNumber: Int = 0
+    
+    
+    //tableViewCellの個数を決める
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cellNumber
+    }
+    
+    //tableViewCellに表示する内容
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "checkedWordCell", for: indexPath)
+        
+        cell.textLabel!.text = ""
+        return cell
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

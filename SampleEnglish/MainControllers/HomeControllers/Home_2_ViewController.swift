@@ -97,6 +97,11 @@ class Home_2_ViewController: UIViewController {
         }
     }
     
+    // 変数の引き継ぎ
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let Home_3_VC = segue.destination as! Home_3_ViewController
+        Home_3_VC.cellNumber = arrayNumber
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
