@@ -13,9 +13,12 @@ class Home_2_ViewController: UIViewController {
     @IBOutlet weak var mainWord: UILabel!
     @IBOutlet weak var meaningLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var checkSwitch: UISwitch!
+    
     
     var number :Int = 1  //問題数を表示する際に用いた変数
     var csvArray: [String] = []  //csvデータを配列にする際に用いる空の配列
+    var switchArray: [Int] = []  //switchをONにした単語を記録するための配列
     var arrayNumber :Int = 0 //csvデータの要素数を数える変数
     
     // csvのデータを配列に変換する
@@ -67,6 +70,7 @@ class Home_2_ViewController: UIViewController {
                 countNumber()
                 setData()  //次の問題のデータを読み込む
                 nextButton.setTitle("Answer", for: .normal)
+                checkSwitch.isOn = false
             }
         }
         else {
@@ -81,6 +85,18 @@ class Home_2_ViewController: UIViewController {
         }
         
     }
+    
+    //SwitchをONにするとその単語にチェックをつける
+    @IBAction func checkButtonAction(_ sender: UISwitch) {
+        if sender.isOn {
+            switchArray += [number - 1]
+        }
+        if sender.isOn == false {
+            switchArray.removeLast()
+            
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

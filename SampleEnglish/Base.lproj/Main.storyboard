@@ -360,16 +360,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="bxK-P4-FQJ">
-                                <rect key="frame" x="30" y="194" width="278" height="66"/>
+                                <rect key="frame" x="30" y="194" width="315" height="66"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレス" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJ5-Q7-Nqb">
-                                        <rect key="frame" x="0.0" y="0.0" width="278" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="例）english@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D7b-cE-Svw">
-                                        <rect key="frame" x="0.0" y="27.5" width="278" height="38.5"/>
+                                        <rect key="frame" x="0.0" y="27.5" width="315" height="38.5"/>
                                         <color key="backgroundColor" red="0.95262452180000001" green="1" blue="0.92772946430000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
@@ -377,7 +377,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-tw-eLr">
-                                <rect key="frame" x="60" y="320" width="218" height="40"/>
+                                <rect key="frame" x="60" y="320" width="255" height="40"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="a0h-tk-oSe"/>
@@ -653,8 +653,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WVC-Ld-zvF">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WVC-Ld-zvF">
                                         <rect key="frame" x="191.5" y="9.5" width="105.5" height="31"/>
+                                        <color key="onTintColor" systemColor="systemPinkColor"/>
+                                        <color key="thumbTintColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <action selector="checkButtonAction:" destination="aZc-TT-bE0" eventType="valueChanged" id="lyb-mS-yBQ"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16601821726116078" green="0.95494829156885985" blue="0.98530122422680411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -692,6 +697,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="6yP-il-WxD"/>
                     <connections>
+                        <outlet property="checkSwitch" destination="WVC-Ld-zvF" id="J2i-GQ-uYr"/>
                         <outlet property="mainWord" destination="BxW-qJ-oYk" id="Kns-px-LHC"/>
                         <outlet property="meaningLabel" destination="8bC-0f-r1G" id="f4C-nJ-kLz"/>
                         <outlet property="nextButton" destination="Q6r-YA-j3V" id="KcN-iL-5cr"/>
@@ -734,6 +740,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
