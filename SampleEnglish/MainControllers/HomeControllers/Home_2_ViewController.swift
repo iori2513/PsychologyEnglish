@@ -40,6 +40,7 @@ class Home_2_ViewController: UIViewController {
         csvArray = loadCSV(fileName: "sample_data")  //csvデータを読み込み、配列に変換する
         arrayNumber = csvArray.count
         meaningLabel.isHidden = true //初めは単語の意味を非表示にする
+        setData()
         
     }
     
@@ -100,7 +101,9 @@ class Home_2_ViewController: UIViewController {
     // 変数の引き継ぎ
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let Home_3_VC = segue.destination as! Home_3_ViewController
-        Home_3_VC.cellNumber = arrayNumber
+        Home_3_VC.switchArray = switchArray
+        Home_3_VC.csvArray = csvArray
+        
     }
     
     override func viewDidLoad() {
