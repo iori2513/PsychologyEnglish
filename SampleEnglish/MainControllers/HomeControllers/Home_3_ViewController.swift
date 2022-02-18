@@ -38,8 +38,10 @@ class Home_3_ViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(true, animated: false)
 
         // Do any additional setup after loading the view.
     }

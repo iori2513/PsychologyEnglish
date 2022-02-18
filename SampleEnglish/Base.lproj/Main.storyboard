@@ -431,7 +431,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6r-iY-HQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="47"/>
+            <point key="canvasLocation" x="-31" y="2472"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="XCR-dX-5Qo">
@@ -447,7 +447,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxd-Qn-S8M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3018.4000000000001" y="526.6866566716642"/>
+            <point key="canvasLocation" x="-31" y="3630"/>
         </scene>
         <!--HomeViewController-->
         <scene sceneID="jEo-g6-g5n">
@@ -490,7 +490,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88a-OC-kqx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="1087"/>
+            <point key="canvasLocation" x="-30" y="1455"/>
         </scene>
         <!--Home_1_ViewController-->
         <scene sceneID="LIP-da-O4Q">
@@ -548,7 +548,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oZ-oT-BU2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="1086.2068965517242"/>
+            <point key="canvasLocation" x="769" y="1455"/>
         </scene>
         <!--TabBarController-->
         <scene sceneID="gQy-30-hZQ">
@@ -568,7 +568,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epQ-Fy-shp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-753" y="494"/>
+            <point key="canvasLocation" x="-1418" y="1454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2g5-Xr-Utz">
@@ -707,7 +707,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LjQ-2O-83T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1572" y="1085.3073463268368"/>
+            <point key="canvasLocation" x="1593" y="1454"/>
         </scene>
         <!--Home3 View Controller-->
         <scene sceneID="yx5-wm-GkJ">
@@ -718,7 +718,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tfR-jf-460">
-                                <rect key="frame" x="0.0" y="89" width="375" height="517"/>
+                                <rect key="frame" x="0.0" y="174" width="375" height="319"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -736,9 +736,41 @@
                                     <outlet property="delegate" destination="hJJ-T2-UeM" id="r21-ad-hPV"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXg-nM-CtJ">
+                                <rect key="frame" x="50" y="567" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Fx7-gU-wqL"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Back to Home">
+                                    <fontDescription key="titleFontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backToHomeButtonAction:" destination="hJJ-T2-UeM" eventType="touchUpInside" id="70F-p8-icN"/>
+                                    <segue destination="Qn2-le-rYG" kind="unwind" unwindAction="unwindSegueFor:towards:" id="NKr-wN-IGz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checked Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXl-Uw-eSZ">
+                                <rect key="frame" x="50" y="104" width="275" height="30"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cuH-sO-jjY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cuH-sO-jjY" firstAttribute="bottom" secondItem="VXg-nM-CtJ" secondAttribute="bottom" constant="50" id="DWA-LL-8Jf"/>
+                            <constraint firstItem="dXl-Uw-eSZ" firstAttribute="top" secondItem="cuH-sO-jjY" secondAttribute="top" constant="60" id="Tfc-Cn-ymP"/>
+                            <constraint firstItem="VXg-nM-CtJ" firstAttribute="centerX" secondItem="B6F-6g-7B3" secondAttribute="centerX" id="Vpg-Vb-ipW"/>
+                            <constraint firstItem="cuH-sO-jjY" firstAttribute="trailing" secondItem="dXl-Uw-eSZ" secondAttribute="trailing" constant="50" id="bhi-Os-jNz"/>
+                            <constraint firstItem="cuH-sO-jjY" firstAttribute="trailing" secondItem="VXg-nM-CtJ" secondAttribute="trailing" constant="50" id="dMn-42-X3F"/>
+                            <constraint firstItem="VXg-nM-CtJ" firstAttribute="leading" secondItem="cuH-sO-jjY" secondAttribute="leading" constant="50" id="ftT-t6-k0F"/>
+                            <constraint firstItem="dXl-Uw-eSZ" firstAttribute="leading" secondItem="cuH-sO-jjY" secondAttribute="leading" constant="50" id="nJ6-sk-oQA"/>
+                            <constraint firstItem="dXl-Uw-eSZ" firstAttribute="centerX" secondItem="B6F-6g-7B3" secondAttribute="centerX" id="use-Q4-v2U"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="r4H-OH-goi"/>
                     <connections>
@@ -746,8 +778,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsb-kF-GHb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Qn2-le-rYG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2380" y="1085.3073463268368"/>
+            <point key="canvasLocation" x="2418" y="1454"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -756,6 +789,9 @@
     <resources>
         <image name="home" width="30" height="30"/>
         <image name="単語帳２" width="1600" height="1200"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -773,6 +809,9 @@
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
