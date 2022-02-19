@@ -10,6 +10,7 @@
 		4D83E46B39D8D807CEB4937B /* Pods_SampleEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB83B1D8D1CBFBAB546B32D /* Pods_SampleEnglish.framework */; };
 		764F12BA27BB6EE2003BFBF9 /* sample_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 764F12B927BB6EE2003BFBF9 /* sample_data.csv */; };
 		764F12BC27BCDEFD003BFBF9 /* Home_3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F12BB27BCDEFD003BFBF9 /* Home_3_ViewController.swift */; };
+		764F12BE27C0C4FC003BFBF9 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F12BD27C0C4FC003BFBF9 /* UserData.swift */; };
 		765FA1B9276E29A2001FF3DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */; };
 		7699416E27B6368E0048FB12 /* Home_1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699416D27B6368E0048FB12 /* Home_1_ViewController.swift */; };
 		7699417127B636F30048FB12 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699417027B636F30048FB12 /* FirstViewController.swift */; };
@@ -35,6 +36,7 @@
 		2D05823F05BB48A86150CF4C /* Pods-SampleEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleEnglish.debug.xcconfig"; path = "Target Support Files/Pods-SampleEnglish/Pods-SampleEnglish.debug.xcconfig"; sourceTree = "<group>"; };
 		764F12B927BB6EE2003BFBF9 /* sample_data.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_data.csv; sourceTree = "<group>"; };
 		764F12BB27BCDEFD003BFBF9 /* Home_3_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_3_ViewController.swift; sourceTree = "<group>"; };
+		764F12BD27C0C4FC003BFBF9 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserData.swift; path = SampleEnglish/UserData.swift; sourceTree = SOURCE_ROOT; };
 		765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		765FA1C0276F9F62001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765FA1C4276F9F67001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 				76D8615A271BCEC3007853BA /* SceneDelegate.swift */,
 				76D8615E271BCEC3007853BA /* Main.storyboard */,
 				764F12B927BB6EE2003BFBF9 /* sample_data.csv */,
+				764F12BD27C0C4FC003BFBF9 /* UserData.swift */,
 				7699416F27B636D50048FB12 /* MainControllers */,
 				76D86161271BCEC8007853BA /* Assets.xcassets */,
 				76D86163271BCEC8007853BA /* LaunchScreen.storyboard */,
@@ -291,6 +294,7 @@
 				76A5B9D22794018E003CBD0A /* SecondViewController.swift in Sources */,
 				7699416E27B6368E0048FB12 /* Home_1_ViewController.swift in Sources */,
 				76A5B9D02793F820003CBD0A /* HomeViewController.swift in Sources */,
+				764F12BE27C0C4FC003BFBF9 /* UserData.swift in Sources */,
 				76B118E72783EE6700EC6CAF /* LogInViewController.swift in Sources */,
 				76D8615B271BCEC3007853BA /* SceneDelegate.swift in Sources */,
 				76A5B9DB27964495003CBD0A /* NavigationController.swift in Sources */,
