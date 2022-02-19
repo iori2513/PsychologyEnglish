@@ -23,6 +23,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
         
         signUp(email: email, password: password, name: name)
+        UserData().username = name
         
     }
     
@@ -53,6 +54,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             
             if let user = result?.user {
                 self.updateDisplayName(name, of: user)
+                self.performSegue(withIdentifier: "toHome", sender: nil)
             }
             self.showErrorIfNeeded(error)
         }

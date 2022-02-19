@@ -7,7 +7,7 @@
 
 import Foundation
 
-class UserProfile: ObservableObject {
+class UserData: ObservableObject {
     /// ユーザ名
     @Published var username: String {
         didSet {

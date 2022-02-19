@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(UserData().username)
         // Do any additional setup after loading the view.
     }
     
