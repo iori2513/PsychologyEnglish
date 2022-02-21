@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zMQ-8K-IWk">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment version="5376" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -232,13 +231,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LogIn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKL-lg-uVZ">
-                                <rect key="frame" x="135.5" y="84" width="104" height="48"/>
+                                <rect key="frame" x="142" y="84" width="104" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <color key="textColor" red="0.27874179980000002" green="0.35142894819999998" blue="0.94328004119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5y-sV-ySe">
-                                <rect key="frame" x="50" y="352" width="275" height="40"/>
+                                <rect key="frame" x="50" y="352" width="287.5" height="40"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="ofB-Yc-y57"/>
@@ -254,16 +253,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="wF8-PG-MKf">
-                                <rect key="frame" x="45" y="432" width="285" height="40"/>
+                                <rect key="frame" x="45" y="432" width="297.5" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="パスワードを忘れた方は" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2i-fB-fDZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="200.5" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワードを忘れた方は" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2i-fB-fDZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="213" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d6-Lo-s5q">
-                                        <rect key="frame" x="202.5" y="0.0" width="82.5" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d6-Lo-s5q">
+                                        <rect key="frame" x="215" y="0.0" width="82.5" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="こちら">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
@@ -278,19 +277,19 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xqz-NH-5OU">
-                                <rect key="frame" x="30" y="162" width="315" height="150"/>
+                                <rect key="frame" x="30" y="162" width="327.5" height="150"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TFd-3l-65g">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="327.5" height="65"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレス" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mL-TI-X2r">
-                                                <rect key="frame" x="0.0" y="0.0" width="315" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="327.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="例）english@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sOf-D8-WyP">
-                                                <rect key="frame" x="0.0" y="20.5" width="315" height="44.5"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="327.5" height="44.5"/>
                                                 <color key="backgroundColor" red="0.95262452180000001" green="1" blue="0.92772946430000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" textContentType="email"/>
@@ -298,16 +297,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IPk-fE-Axv">
-                                        <rect key="frame" x="0.0" y="85" width="315" height="65"/>
+                                        <rect key="frame" x="0.0" y="85" width="327.5" height="65"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEh-ve-C6l">
-                                                <rect key="frame" x="0.0" y="0.0" width="315" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="327.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="例）english1234" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IcC-fu-qrl">
-                                                <rect key="frame" x="0.0" y="20.5" width="315" height="44.5"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="327.5" height="44.5"/>
                                                 <color key="backgroundColor" red="0.95262452180000001" green="1" blue="0.92772946430000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" textContentType="password"/>
@@ -362,16 +361,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="bxK-P4-FQJ">
-                                <rect key="frame" x="30" y="194" width="315" height="66"/>
+                                <rect key="frame" x="30" y="194" width="278" height="66"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレス" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJ5-Q7-Nqb">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="例）english@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D7b-cE-Svw">
-                                        <rect key="frame" x="0.0" y="27.5" width="315" height="38.5"/>
+                                        <rect key="frame" x="0.0" y="27.5" width="278" height="38.5"/>
                                         <color key="backgroundColor" red="0.95262452180000001" green="1" blue="0.92772946430000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
@@ -379,7 +378,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-tw-eLr">
-                                <rect key="frame" x="60" y="320" width="255" height="40"/>
+                                <rect key="frame" x="60" y="320" width="218" height="40"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="a0h-tk-oSe"/>
@@ -750,7 +749,6 @@
                                     <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="backToHomeButtonAction:" destination="hJJ-T2-UeM" eventType="touchUpInside" id="70F-p8-icN"/>
                                     <segue destination="Qn2-le-rYG" kind="unwind" unwindAction="unwindSegueFor:towards:" id="NKr-wN-IGz"/>
                                 </connections>
                             </button>

@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     //Home_3_ViewのHome画面に戻るボタンと紐付けるための記述
-    @IBAction func unwindSegue(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+    @IBAction func unwindSegue(for unwindSegue: UIStoryboardSegue, towards subsequentVC: Home_3_ViewController) {
     }
     
     override func viewDidLoad() {

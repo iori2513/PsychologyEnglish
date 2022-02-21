@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import LocalAuthentication
 
 class LogInViewController: UIViewController, UITextFieldDelegate {
     
@@ -51,16 +52,63 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         case .wrongPassword: message = "パスワードが違います"
         case .userDisabled: message = "このアカウントは無効です"
         case .weakPassword: message = "パスワードが脆弱すぎます"
-        // これは一例です。必要に応じて増減させてください
         default: break
         }
         return message
+    }
+    
+    //指紋認証(顔認証)を行う処理
+    func allowFaceID() {
+        let context = LAContext()
+        var error: NSError?
+        var description: String = "認証"
+
+        // Touch ID・Face IDが利用できるデバイスか確認する
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            // 利用できる場合は指紋・顔認証を要求する
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: description, reply: {success, evaluateError in
+                if (success) {
+                    // 認証成功時に画面を遷移する
+                    DispatchQueue.main.async {
+                      self.performSegue(withIdentifier: "toHome",sender: nil)
+                    }
+                    
+
+                    
+                    print("認証成功")
+                } else {
+                    // 認証失敗時の処理を書く
+                    print("認証失敗")
+                }
+            })
+        } else {
+            // Touch ID・Face IDが利用できない場合の処理
+            let errorDescription = error?.userInfo["NSLocalizedDescription"] ?? ""
+            print(errorDescription) // Biometry is not available on this device.
+        }
+        switch context.biometryType {
+        case .faceID: // Xcode 9.2 以上は .faceID
+            description = "アカウント情報を閲覧するためにFace IDを認証として用います。"
+            break
+        case .touchID: // Xcode 9.2 以上は .touchID
+            description = "アカウント情報を閲覧するためにTouch IDを認証として用います。"
+            break
+        case .none:
+            description = "アカウント情報を閲覧するためにログインしてください。"
+            break
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTextField.delegate = self
         passwordTextField.delegate = self
+        
+        //新規登録済みであれば指紋認証（顔認証）を行う
+        if UserData().password != "" && UserData().email != "" && UserData().username != "" {
+            allowFaceID()
+            print(11)
+        }
 
         // Do any additional setup after loading the view.
     }

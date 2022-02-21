@@ -24,6 +24,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
         signUp(email: email, password: password, name: name)
         UserData().username = name
+        UserData().email = email
+        UserData().password = password
         
     }
     
