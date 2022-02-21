@@ -98,18 +98,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7699416F27B636D50048FB12 /* MainControllers */ = {
+		766F704527C3979C00A53182 /* WordData */ = {
+			isa = PBXGroup;
+			children = (
+				764F12B927BB6EE2003BFBF9 /* sample_data_1.csv */,
+				766F704327C3921D00A53182 /* sample_data_2.csv */,
+			);
+			path = WordData;
+			sourceTree = "<group>";
+		};
+		766F704627C3981E00A53182 /* InitialControllers */ = {
 			isa = PBXGroup;
 			children = (
 				7699417027B636F30048FB12 /* FirstViewController.swift */,
 				76DADB5C27898EEB00048E1B /* ForgetViewController.swift */,
-				7699417227B637390048FB12 /* HomeControllers */,
-				76A5B9CF2793F820003CBD0A /* HomeViewController.swift */,
 				76B118E62783EE6700EC6CAF /* LogInViewController.swift */,
-				76A5B9DA27964495003CBD0A /* NavigationController.swift */,
-				76A5B9D12794018E003CBD0A /* SecondViewController.swift */,
 				76D8616C271BCFD2007853BA /* SignUpViewController.swift */,
+			);
+			path = InitialControllers;
+			sourceTree = "<group>";
+		};
+		766F704727C3986000A53182 /* ExtraControllers */ = {
+			isa = PBXGroup;
+			children = (
 				76A5B9CD2793CACA003CBD0A /* TabBarController.swift */,
+				76A5B9DA27964495003CBD0A /* NavigationController.swift */,
+			);
+			path = ExtraControllers;
+			sourceTree = "<group>";
+		};
+		7699416F27B636D50048FB12 /* MainControllers */ = {
+			isa = PBXGroup;
+			children = (
+				766F704627C3981E00A53182 /* InitialControllers */,
+				7699417227B637390048FB12 /* HomeControllers */,
+				76A5B9D12794018E003CBD0A /* SecondViewController.swift */,
 			);
 			path = MainControllers;
 			sourceTree = "<group>";
@@ -117,6 +140,7 @@
 		7699417227B637390048FB12 /* HomeControllers */ = {
 			isa = PBXGroup;
 			children = (
+				76A5B9CF2793F820003CBD0A /* HomeViewController.swift */,
 				7699416D27B6368E0048FB12 /* Home_1_ViewController.swift */,
 				7699417327B66BB70048FB12 /* Home_2_ViewController.swift */,
 				764F12BB27BCDEFD003BFBF9 /* Home_3_ViewController.swift */,
@@ -149,10 +173,10 @@
 				765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */,
 				76D86158271BCEC3007853BA /* AppDelegate.swift */,
 				76D8615A271BCEC3007853BA /* SceneDelegate.swift */,
-				76D8615E271BCEC3007853BA /* Main.storyboard */,
-				764F12B927BB6EE2003BFBF9 /* sample_data_1.csv */,
-				766F704327C3921D00A53182 /* sample_data_2.csv */,
 				764F12BD27C0C4FC003BFBF9 /* UserData.swift */,
+				76D8615E271BCEC3007853BA /* Main.storyboard */,
+				766F704527C3979C00A53182 /* WordData */,
+				766F704727C3986000A53182 /* ExtraControllers */,
 				7699416F27B636D50048FB12 /* MainControllers */,
 				76D86161271BCEC8007853BA /* Assets.xcassets */,
 				76D86163271BCEC8007853BA /* LaunchScreen.storyboard */,
