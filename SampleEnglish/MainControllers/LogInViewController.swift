@@ -13,6 +13,8 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    //ログインボタンを押した際の処理
     @IBAction private func didTapLogInButton() {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""

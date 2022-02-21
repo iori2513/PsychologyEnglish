@@ -20,6 +20,7 @@ class Home_2_ViewController: UIViewController {
     var csvArray: [String] = []  //csvデータを配列にする際に用いる空の配列
     var switchArray: [Int] = []  //switchをONにした単語を記録するための配列
     var arrayNumber :Int = 0 //csvデータの要素数を数える変数
+    var partNumber: Int = 0 //どの単語のデータを選択するかを決める数字で値はHome_1_ViewControllerから引き継いでくる
     
     // csvのデータを配列に変換する
     func loadCSV(fileName: String) -> [String] {
@@ -37,7 +38,7 @@ class Home_2_ViewController: UIViewController {
     
     //初期設定
     func firstSetting() {
-        csvArray = loadCSV(fileName: "sample_data")  //csvデータを読み込み、配列に変換する
+        csvArray = loadCSV(fileName: "sample_data_\(partNumber)")  //csvデータを読み込み、配列に変換する
         arrayNumber = csvArray.count
         meaningLabel.isHidden = true //初めは単語の意味を非表示にする
         setData()

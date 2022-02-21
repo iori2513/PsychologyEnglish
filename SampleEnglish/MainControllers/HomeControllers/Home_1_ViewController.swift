@@ -10,6 +10,8 @@ import UIKit
 class Home_1_ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    var partNumber: Int = 0
+    
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -17,13 +19,13 @@ class Home_1_ViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //storyboard上のセルを生成　storyboardのIdentifierで付けたものをここで設定する
+        //storyboard上のセルを生成
         let cell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
 
         //セル上のTag(1)とつけたUILabelを生成
         let label = cell.contentView.viewWithTag(1) as! UILabel
 
-        //今回は簡易的にセルの番号をラベルのテキストに反映させる
+        //セルの番号をラベルのテキストに反映させる
         label.text = "Part " + String(indexPath.row + 1)
 
         return cell
@@ -43,11 +45,17 @@ class Home_1_ViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     //セル選択時の処理
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        //どの単語データをテストするかをユーザーに選択させ、そのデータをセットする
+        partNumber = indexPath.row + 1
         // 画面遷移
         performSegue(withIdentifier: "goNext", sender: nil)
     }
 
+    // 変数の引き継ぎ
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let Home_2_VC = segue.destination as! Home_2_ViewController
+        Home_2_VC.partNumber = partNumber
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

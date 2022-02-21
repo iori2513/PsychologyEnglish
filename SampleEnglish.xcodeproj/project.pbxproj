@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4D83E46B39D8D807CEB4937B /* Pods_SampleEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB83B1D8D1CBFBAB546B32D /* Pods_SampleEnglish.framework */; };
-		764F12BA27BB6EE2003BFBF9 /* sample_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 764F12B927BB6EE2003BFBF9 /* sample_data.csv */; };
+		764F12BA27BB6EE2003BFBF9 /* sample_data_1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 764F12B927BB6EE2003BFBF9 /* sample_data_1.csv */; };
 		764F12BC27BCDEFD003BFBF9 /* Home_3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F12BB27BCDEFD003BFBF9 /* Home_3_ViewController.swift */; };
 		764F12BE27C0C4FC003BFBF9 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F12BD27C0C4FC003BFBF9 /* UserData.swift */; };
 		765FA1B9276E29A2001FF3DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */; };
+		766F704427C3921D00A53182 /* sample_data_2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 766F704327C3921D00A53182 /* sample_data_2.csv */; };
 		7680F09D27C11E1900005F76 /* LAContext.h in Resources */ = {isa = PBXBuildFile; fileRef = 7680F09C27C11E1900005F76 /* LAContext.h */; };
 		7699416E27B6368E0048FB12 /* Home_1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699416D27B6368E0048FB12 /* Home_1_ViewController.swift */; };
 		7699417127B636F30048FB12 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699417027B636F30048FB12 /* FirstViewController.swift */; };
@@ -35,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		2D05823F05BB48A86150CF4C /* Pods-SampleEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleEnglish.debug.xcconfig"; path = "Target Support Files/Pods-SampleEnglish/Pods-SampleEnglish.debug.xcconfig"; sourceTree = "<group>"; };
-		764F12B927BB6EE2003BFBF9 /* sample_data.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_data.csv; sourceTree = "<group>"; };
+		764F12B927BB6EE2003BFBF9 /* sample_data_1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_data_1.csv; sourceTree = "<group>"; };
 		764F12BB27BCDEFD003BFBF9 /* Home_3_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_3_ViewController.swift; sourceTree = "<group>"; };
 		764F12BD27C0C4FC003BFBF9 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserData.swift; path = SampleEnglish/UserData.swift; sourceTree = SOURCE_ROOT; };
 		765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		765FA1C4276F9F67001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765FA1C7276F9F70001FF3DC /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765FA1CA276F9F8F001FF3DC /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
+		766F704327C3921D00A53182 /* sample_data_2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_data_2.csv; sourceTree = "<group>"; };
 		7680F09C27C11E1900005F76 /* LAContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAContext.h; sourceTree = "<group>"; };
 		7699416D27B6368E0048FB12 /* Home_1_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_1_ViewController.swift; sourceTree = "<group>"; };
 		7699417027B636F30048FB12 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +150,8 @@
 				76D86158271BCEC3007853BA /* AppDelegate.swift */,
 				76D8615A271BCEC3007853BA /* SceneDelegate.swift */,
 				76D8615E271BCEC3007853BA /* Main.storyboard */,
-				764F12B927BB6EE2003BFBF9 /* sample_data.csv */,
+				764F12B927BB6EE2003BFBF9 /* sample_data_1.csv */,
+				766F704327C3921D00A53182 /* sample_data_2.csv */,
 				764F12BD27C0C4FC003BFBF9 /* UserData.swift */,
 				7699416F27B636D50048FB12 /* MainControllers */,
 				76D86161271BCEC8007853BA /* Assets.xcassets */,
@@ -231,12 +234,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				766F704427C3921D00A53182 /* sample_data_2.csv in Resources */,
 				76D86165271BCEC8007853BA /* LaunchScreen.storyboard in Resources */,
 				765FA1B9276E29A2001FF3DC /* GoogleService-Info.plist in Resources */,
 				7680F09D27C11E1900005F76 /* LAContext.h in Resources */,
 				76D86162271BCEC8007853BA /* Assets.xcassets in Resources */,
 				76D86160271BCEC3007853BA /* Main.storyboard in Resources */,
-				764F12BA27BB6EE2003BFBF9 /* sample_data.csv in Resources */,
+				764F12BA27BB6EE2003BFBF9 /* sample_data_1.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
