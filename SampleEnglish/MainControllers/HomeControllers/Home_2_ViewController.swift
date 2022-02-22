@@ -21,7 +21,7 @@ class Home_2_ViewController: UIViewController {
     var switchArray: [Int] = []  //switchをONにした単語を記録するための配列
     var arrayNumber :Int = 0 //csvデータの要素数を数える変数
     var partNumber: Int = 0 //どの単語のデータを選択するかを決める数字で値はHome_1_ViewControllerから引き継いでくる
-    
+    var checkedWordArray :[String] = []  //checkをつけた単語のデータを入れる配列
     // csvのデータを配列に変換する
     func loadCSV(fileName: String) -> [String] {
         let csvBundle = Bundle.main.path(forResource: fileName, ofType: "csv")!
@@ -82,7 +82,9 @@ class Home_2_ViewController: UIViewController {
             }
             else {
                 //単語を全て表示したら次の画面へ移行
+                putWordInCheckedWordArray()
                 performSegue(withIdentifier: "result", sender: nil)
+                
             }
         }
         
@@ -99,11 +101,18 @@ class Home_2_ViewController: UIViewController {
         }
     }
     
+    //checkedWordArrayにチェックされた単語を代入する
+    func putWordInCheckedWordArray() {
+        for num in switchArray {
+            checkedWordArray += [csvArray[num]]
+        }
+    }
+    
     // 変数の引き継ぎ
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let Home_3_VC = segue.destination as! Home_3_ViewController
         Home_3_VC.switchArray = switchArray
-        Home_3_VC.csvArray = csvArray
+        Home_3_VC.checkedWordArray = checkedWordArray
         
     }
     

@@ -12,17 +12,9 @@ class Home_3_ViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var cellNumber: Int = 0  //tableViewCellの個数を表す変数で値はHome_2_ViewControllerから引き継いでくる
     var switchArray :[Int] = []  //Home_2_ViewControllerのswitchArrayを引き継ぐための配列
-    var csvArray :[String] = []  //Home_2_ViewControllerのcsvArrayを引き継ぐための配列
-    var checkedWordArray :[String] = []  //checkをつけた単語のデータを入れる配列
+    var checkedWordArray :[String] = []  //checkをつけた単語のデータを入れる配列で値はHome_2_ViewControllerから引き継いでくる
+    var userWordArray :[String] = []  //ユーザーのわからなかった単語をこの配列に入れてUserdefaultsに保存する
     
-    
-    //checkedWordArrayにチェックされた単語を代入する
-    func putWordInCheckedWordArray() {
-        for num in switchArray {
-            checkedWordArray += [csvArray[num]]
-        }
-        
-    }
     
     //tableViewCellの個数を決める
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,16 +24,33 @@ class Home_3_ViewController: UIViewController, UITableViewDelegate, UITableViewD
     //tableViewCellに表示する内容
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "checkedWordCell", for: indexPath)
-        putWordInCheckedWordArray()
         let cellCheckedWordArray = checkedWordArray[indexPath.row].components(separatedBy: ",")
         cell.textLabel!.text = cellCheckedWordArray[0] + "・・・" + cellCheckedWordArray[1]
         return cell
     }
     
     
+    //復習用単語に保存ボタンを押した際の処理
+    @IBAction func saveCheckedWordButton(_ sender: Any) {
+        //現在のユーザーの復習用単語のデータを参照し、今回のテストでわからなかった単語と被りがないように保存する
+        userWordArray = UserData().wordArray
+        for data in checkedWordArray {
+            for userData in userWordArray {
+                if data == userData {
+                    break
+                }
+            }
+            userWordArray += [data]
+        }
+        UserData().wordArray = userWordArray
+        print(UserData().wordArray)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: false)
+        print(checkedWordArray)
+        print(UserData().wordArray)
 
         // Do any additional setup after loading the view.
     }
