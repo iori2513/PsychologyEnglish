@@ -1,13 +1,13 @@
 //
-//  Second_1_ViewController.swift
+//  SecondViewController.swift
 //  SampleEnglish
 //
-//  Created by 中田伊織 on 2022/02/25.
+//  Created by 中田伊織 on 2022/01/16.
 //
 
 import UIKit
 
-class Second_1_ViewController: UIViewController {
+class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +15,9 @@ class Second_1_ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 
     /*
     // MARK: - Navigation

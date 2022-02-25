@@ -430,6 +430,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="ImS-Hk-AWF" kind="show" id="zdE-RR-h0z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lgh-vW-82c"/>
@@ -440,7 +443,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6r-iY-HQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-31.199999999999999" y="2471.5142428785607"/>
+            <point key="canvasLocation" x="65" y="2472"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="XCR-dX-5Qo">
@@ -579,8 +582,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="AeK-mC-Ull" kind="relationship" relationship="viewControllers" id="cB5-TV-2ub"/>
-                        <segue destination="2ID-Wg-2uO" kind="relationship" relationship="viewControllers" id="g3m-IN-6Zr"/>
                         <segue destination="Sah-qX-QNS" kind="relationship" relationship="viewControllers" id="6Md-bJ-Jtb"/>
+                        <segue destination="2ID-Wg-2uO" kind="relationship" relationship="viewControllers" id="g3m-IN-6Zr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epQ-Fy-shp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -817,10 +820,10 @@
             </objects>
             <point key="canvasLocation" x="2416.8000000000002" y="1453.2233883058473"/>
         </scene>
-        <!--Home_2_ViewController-->
+        <!--Second_1_ViewController-->
         <scene sceneID="2kV-YY-Tyy">
             <objects>
-                <viewController title="Home_2_ViewController" id="ImS-Hk-AWF" customClass="Home_2_ViewController" customModule="SampleEnglish" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Second_1_ViewController" id="ImS-Hk-AWF" customClass="Second_1_ViewController" customModule="SampleEnglish" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X0g-v8-FbD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -841,6 +844,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xw2-W4-0Ah">
+                                <rect key="frame" x="97" y="415" width="181" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6sr-sH-8hG"/>
+                                    <constraint firstAttribute="width" constant="208" id="HZC-tT-LEd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="goToNextWordAction:" destination="ImS-Hk-AWF" eventType="touchUpInside" id="zm9-LQ-OJN"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="単語帳２" translatesAutoresizingMaskIntoConstraints="NO" id="3iX-xk-qDM">
                                 <rect key="frame" x="97" y="134" width="181" height="200"/>
                                 <constraints>
@@ -854,8 +870,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="LEV-0W-7aN">
-                                <rect key="frame" x="40" y="460" width="141" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="LEV-0W-7aN">
+                                <rect key="frame" x="97" y="498" width="141" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="check" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAt-fZ-a7f">
                                         <rect key="frame" x="0.0" y="4" width="91" height="42"/>
@@ -877,19 +893,6 @@
                                     <constraint firstAttribute="height" constant="50" id="q0b-Th-wNM"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xw2-W4-0Ah">
-                                <rect key="frame" x="157" y="415" width="61" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="6sr-sH-8hG"/>
-                                    <constraint firstAttribute="width" constant="208" id="HZC-tT-LEd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Answer"/>
-                                <connections>
-                                    <action selector="goToNextWordAction:" destination="ImS-Hk-AWF" eventType="touchUpInside" id="zm9-LQ-OJN"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5cM-XJ-kY5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -925,11 +928,103 @@
                         <outlet property="meaningLabel" destination="cih-et-iM2" id="GGl-Oj-oJJ"/>
                         <outlet property="nextButton" destination="Xw2-W4-0Ah" id="k5F-US-t3i"/>
                         <outlet property="wordCount" destination="jtj-OW-1Uh" id="IDO-OR-83h"/>
+                        <segue destination="mwK-sb-uXG" kind="show" identifier="result" id="Dtw-Vb-gy7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rs9-Bs-R53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="2472"/>
+            <point key="canvasLocation" x="932" y="2471.5142428785607"/>
+        </scene>
+        <!--Second_2_ViewController-->
+        <scene sceneID="xCz-Ia-zO9">
+            <objects>
+                <viewController title="Second_2_ViewController" id="mwK-sb-uXG" customClass="Second_2_ViewController" customModule="SampleEnglish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nM1-BL-XHd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="s66-rW-JKm">
+                                <rect key="frame" x="0.0" y="174" width="375" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkedWordCell" id="aTc-cE-P5E">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aTc-cE-P5E" id="HnF-rS-GEn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="mwK-sb-uXG" id="lyv-EP-vcM"/>
+                                    <outlet property="delegate" destination="mwK-sb-uXG" id="du1-46-A5V"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEF-67-Tqc">
+                                <rect key="frame" x="50" y="567" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FzZ-mC-S6x"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Back to Home">
+                                    <fontDescription key="titleFontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Ooz-t2-lSz" kind="unwind" unwindAction="unwindSegueFor:towards:" id="0Fs-AV-8kB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checked Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uq-5H-15j">
+                                <rect key="frame" x="50" y="104" width="275" height="30"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MK0-Li-kJf">
+                                <rect key="frame" x="50" y="497" width="275" height="50"/>
+                                <color key="backgroundColor" red="0.69739075120000005" green="0.77202418360000002" blue="0.97534233329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Oi-U1-27H"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="復習用単語に保存">
+                                    <fontDescription key="titleFontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveCheckedWordButton:" destination="mwK-sb-uXG" eventType="touchUpInside" id="vkl-JR-GIM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5bA-Bb-bZy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3uq-5H-15j" firstAttribute="leading" secondItem="5bA-Bb-bZy" secondAttribute="leading" constant="50" id="4Ht-yJ-wVF"/>
+                            <constraint firstItem="FEF-67-Tqc" firstAttribute="centerX" secondItem="nM1-BL-XHd" secondAttribute="centerX" id="NaZ-r3-m00"/>
+                            <constraint firstItem="3uq-5H-15j" firstAttribute="centerX" secondItem="nM1-BL-XHd" secondAttribute="centerX" id="P5W-qd-Dxv"/>
+                            <constraint firstItem="5bA-Bb-bZy" firstAttribute="trailing" secondItem="FEF-67-Tqc" secondAttribute="trailing" constant="50" id="Ph6-jX-nL5"/>
+                            <constraint firstItem="5bA-Bb-bZy" firstAttribute="trailing" secondItem="3uq-5H-15j" secondAttribute="trailing" constant="50" id="TgB-BO-8iD"/>
+                            <constraint firstItem="FEF-67-Tqc" firstAttribute="top" secondItem="MK0-Li-kJf" secondAttribute="bottom" constant="20" id="VUp-ju-WO0"/>
+                            <constraint firstItem="MK0-Li-kJf" firstAttribute="leading" secondItem="5bA-Bb-bZy" secondAttribute="leading" constant="50" id="Zvb-eE-W9d"/>
+                            <constraint firstItem="5bA-Bb-bZy" firstAttribute="bottom" secondItem="FEF-67-Tqc" secondAttribute="bottom" constant="50" id="bAu-D8-Wst"/>
+                            <constraint firstItem="5bA-Bb-bZy" firstAttribute="trailing" secondItem="MK0-Li-kJf" secondAttribute="trailing" constant="50" id="g9O-cP-nr9"/>
+                            <constraint firstItem="3uq-5H-15j" firstAttribute="top" secondItem="5bA-Bb-bZy" secondAttribute="top" constant="60" id="jt1-Te-LtZ"/>
+                            <constraint firstItem="FEF-67-Tqc" firstAttribute="leading" secondItem="5bA-Bb-bZy" secondAttribute="leading" constant="50" id="xqO-Gn-bEu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6t4-qK-rKh"/>
+                    <connections>
+                        <outlet property="checkedWordTableView" destination="s66-rW-JKm" id="2eA-Jq-xBu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7kY-jQ-teO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Ooz-t2-lSz" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="2472"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
