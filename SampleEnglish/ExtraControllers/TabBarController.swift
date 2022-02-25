@@ -27,7 +27,7 @@ class TabBarController: UITabBarController {
         // タブバーの詳細の設定
         homeViewController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "home"), tag: 0)
         homeViewController.view.backgroundColor = .white
-        secondViewController.tabBarItem = UITabBarItem(title: "second", image: .none, tag: 0)
+        secondViewController.tabBarItem = UITabBarItem(title: "My単語帳", image: UIImage(named: "checked"), tag: 0)
         secondViewController.view.backgroundColor = .white
         
         // Viewcontrollerを配列に入れ実装

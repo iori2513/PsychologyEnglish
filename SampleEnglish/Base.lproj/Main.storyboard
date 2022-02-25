@@ -438,14 +438,14 @@
                         <viewLayoutGuide key="safeArea" id="lgh-vW-82c"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="mjA-Ib-G9J"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="My単語帳" image="check" id="mjA-Ib-G9J"/>
                     <navigationItem key="navigationItem" title="PsychologyEnglish" id="9L6-hZ-AvF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6r-iY-HQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="65" y="2472"/>
         </scene>
-        <!--Item 2-->
+        <!--設定-->
         <scene sceneID="XCR-dX-5Qo">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="2ID-Wg-2uO" sceneMemberID="viewController">
@@ -455,7 +455,7 @@
                         <viewLayoutGuide key="safeArea" id="xvf-B3-SDY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="vQo-pg-DqK"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="設定" image="setting" id="vQo-pg-DqK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxd-Qn-S8M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1032,7 +1032,9 @@
         <segue reference="ikR-yx-egP"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="check" width="30" height="30"/>
         <image name="home" width="30" height="30"/>
+        <image name="setting" width="30" height="30"/>
         <image name="単語帳２" width="1600" height="1200"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
