@@ -18,22 +18,22 @@ class TabBarController: UITabBarController {
         // Do any additional setup after loading the view.
     }
     
-    // タブバーを実装する
-    func setTabBar() {
-        // ViewControllerの変数の設定
-        let homeViewController = HomeViewController()
-        let secondViewController = SecondViewController()
-        
-        // タブバーの詳細の設定
-        homeViewController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "home"), tag: 0)
-        homeViewController.view.backgroundColor = .white
-        secondViewController.tabBarItem = UITabBarItem(title: "My単語帳", image: UIImage(named: "checked"), tag: 0)
-        secondViewController.view.backgroundColor = .white
-        
-        // Viewcontrollerを配列に入れ実装
-        viewControllers = [homeViewController, secondViewController]
-        setViewControllers(viewControllers, animated: true)
-    }
+//    // タブバーを実装する
+//    func setTabBar() {
+//        // ViewControllerの変数の設定
+//        let homeViewController = HomeViewController()
+//        let secondViewController = SecondViewController()
+//
+//        // タブバーの詳細の設定
+//        homeViewController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "home"), tag: 0)
+//        homeViewController.view.backgroundColor = .white
+//        secondViewController.tabBarItem = UITabBarItem(title: "My単語帳", image: UIImage(named: "checked"), tag: 0)
+//        secondViewController.view.backgroundColor = .white
+//
+//        // Viewcontrollerを配列に入れ実装
+//        viewControllers = [homeViewController, secondViewController]
+//        setViewControllers(viewControllers, animated: true)
+//    }
     
 
     /*

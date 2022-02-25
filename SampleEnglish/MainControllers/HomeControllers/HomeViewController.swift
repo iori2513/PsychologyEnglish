@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //ナビゲーションバーを非表示にする
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
