@@ -40,7 +40,7 @@ class UserData: ObservableObject {
         username = UserDefaults.standard.string(forKey: "username") ?? ""
         email = UserDefaults.standard.string(forKey: "email") ?? ""
         password = UserDefaults.standard.string(forKey: "password") ?? ""
-        wordArray = UserDefaults.standard.array(forKey: "wordArray") as! [String]
+        wordArray = UserDefaults.standard.array(forKey: "wordArray") as? [String] ?? []
         
     }
 }

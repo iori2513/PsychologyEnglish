@@ -57,6 +57,7 @@ class Home_1_ViewController: UIViewController, UICollectionViewDelegate, UIColle
         Home_2_VC.partNumber = partNumber
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // ナビゲーションバーを表示する
