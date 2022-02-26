@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(UserData().username)
-        print(UserData().wordArray)
+        print(UserData().email)
         // Do any additional setup after loading the view.
     }
     
