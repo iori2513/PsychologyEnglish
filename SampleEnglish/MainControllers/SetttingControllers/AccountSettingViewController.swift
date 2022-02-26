@@ -1,34 +1,29 @@
 //
-//  SettingViewController.swift
+//  AccountSettingViewController.swift
 //  SampleEnglish
 //
-//  Created by 中田伊織 on 2022/02/25.
+//  Created by 中田伊織 on 2022/02/26.
 //
 
 import UIKit
 
-class SettingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class AccountSettingViewController: UIViewController {
     //tableViewCellの個数を決める
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
 
     //tableViewCellに表示する内容
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "settingTableCell", for: indexPath)
-        let settingArray: [String] = ["アカウント設定", "復習用単語を閲覧する"]
-        cell.textLabel!.text = settingArray[indexPath.row]
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "ASTableViewCell", for: indexPath)
+        cell.textLabel!.text = "退会する"
         return cell
     }
     
     //セル選択時の処理
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            performSegue(withIdentifier: "account", sender: nil)
-        }
-        if indexPath.row == 1 {
-            performSegue(withIdentifier: "myWords", sender: nil)
+            
         }
     }
 
@@ -38,10 +33,6 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Do any additional setup after loading the view.
     }
     
-    //ナビゲーションバーを非表示にする
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(true, animated: false)
-    }
 
     /*
     // MARK: - Navigation

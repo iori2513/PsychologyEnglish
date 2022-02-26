@@ -16,6 +16,7 @@
 		766F704B27C8B88100A53182 /* Second_1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F704A27C8B88100A53182 /* Second_1_ViewController.swift */; };
 		766F704E27C8C70B00A53182 /* Second_2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F704D27C8C70B00A53182 /* Second_2_ViewController.swift */; };
 		766F705027C8E41D00A53182 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F704F27C8E41D00A53182 /* SettingViewController.swift */; };
+		766F705327C9F48500A53182 /* AccountSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F705227C9F48500A53182 /* AccountSettingViewController.swift */; };
 		7680F09D27C11E1900005F76 /* LAContext.h in Resources */ = {isa = PBXBuildFile; fileRef = 7680F09C27C11E1900005F76 /* LAContext.h */; };
 		7699416E27B6368E0048FB12 /* Home_1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699416D27B6368E0048FB12 /* Home_1_ViewController.swift */; };
 		7699417127B636F30048FB12 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699417027B636F30048FB12 /* FirstViewController.swift */; };
@@ -50,7 +51,8 @@
 		766F704327C3921D00A53182 /* sample_data_2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_data_2.csv; sourceTree = "<group>"; };
 		766F704A27C8B88100A53182 /* Second_1_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second_1_ViewController.swift; sourceTree = "<group>"; };
 		766F704D27C8C70B00A53182 /* Second_2_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second_2_ViewController.swift; sourceTree = "<group>"; };
-		766F704F27C8E41D00A53182 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = SecondControllers/SettingViewController.swift; sourceTree = "<group>"; };
+		766F704F27C8E41D00A53182 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		766F705227C9F48500A53182 /* AccountSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingViewController.swift; sourceTree = "<group>"; };
 		7680F09C27C11E1900005F76 /* LAContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAContext.h; sourceTree = "<group>"; };
 		7699416D27B6368E0048FB12 /* Home_1_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_1_ViewController.swift; sourceTree = "<group>"; };
 		7699417027B636F30048FB12 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -143,10 +145,19 @@
 			path = SecondControllers;
 			sourceTree = "<group>";
 		};
-		7699416F27B636D50048FB12 /* MainControllers */ = {
+		766F705127C9F45D00A53182 /* SetttingControllers */ = {
 			isa = PBXGroup;
 			children = (
 				766F704F27C8E41D00A53182 /* SettingViewController.swift */,
+				766F705227C9F48500A53182 /* AccountSettingViewController.swift */,
+			);
+			path = SetttingControllers;
+			sourceTree = "<group>";
+		};
+		7699416F27B636D50048FB12 /* MainControllers */ = {
+			isa = PBXGroup;
+			children = (
+				766F705127C9F45D00A53182 /* SetttingControllers */,
 				766F704627C3981E00A53182 /* InitialControllers */,
 				7699417227B637390048FB12 /* HomeControllers */,
 				766F704C27C8B95D00A53182 /* SecondControllers */,
@@ -345,6 +356,7 @@
 				764F12BC27BCDEFD003BFBF9 /* Home_3_ViewController.swift in Sources */,
 				76A5B9D22794018E003CBD0A /* SecondViewController.swift in Sources */,
 				7699416E27B6368E0048FB12 /* Home_1_ViewController.swift in Sources */,
+				766F705327C9F48500A53182 /* AccountSettingViewController.swift in Sources */,
 				76A5B9D02793F820003CBD0A /* HomeViewController.swift in Sources */,
 				764F12BE27C0C4FC003BFBF9 /* UserData.swift in Sources */,
 				76B118E72783EE6700EC6CAF /* LogInViewController.swift in Sources */,

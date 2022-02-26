@@ -14,6 +14,7 @@ class Home_3_ViewController: UIViewController, UITableViewDelegate, UITableViewD
     var switchArray :[Int] = []  //Home_2_ViewControllerのswitchArrayを引き継ぐための配列
     var checkedWordArray :[String] = []  //checkをつけた単語のデータを入れる配列で値はHome_2_ViewControllerから引き継いでくる
     var userWordArray :[String] = []  //ユーザーのわからなかった単語をこの配列に入れてUserdefaultsに保存する
+    var cellCheckedWordArray :[String] = []
     
     
     //tableViewCellの個数を決める
@@ -24,9 +25,19 @@ class Home_3_ViewController: UIViewController, UITableViewDelegate, UITableViewD
     //tableViewCellに表示する内容
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "checkedWordCell", for: indexPath)
-        let cellCheckedWordArray = checkedWordArray[indexPath.row].components(separatedBy: ",")
+        cellCheckedWordArray = checkedWordArray[indexPath.row].components(separatedBy: ",")
         cell.textLabel!.text = cellCheckedWordArray[0] + "・・・" + cellCheckedWordArray[1]
         return cell
+    }
+    
+    //tableViewCellを削除する処理
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            cellCheckedWordArray.remove(at: indexPath.row)
+            switchArray.remove(at: indexPath.row)
+            checkedWordTableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            print(cellCheckedWordArray)
+        }        
     }
     
     
@@ -51,6 +62,7 @@ class Home_3_ViewController: UIViewController, UITableViewDelegate, UITableViewD
         navigationController?.setNavigationBarHidden(true, animated: false)
         print(checkedWordArray)
         print(UserData().wordArray)
+        checkedWordTableView.isEditing = true
 
         // Do any additional setup after loading the view.
     }
