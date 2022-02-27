@@ -38,8 +38,8 @@ class Home_1_ViewController: UIViewController, UICollectionViewDelegate, UIColle
         // 機種ごとの横幅の値を取ってきて、それに応じてセルの横幅を決める
         let screen_width :CGFloat = UIScreen.main.bounds.size.width
         
-        let image_width :CGFloat = (screen_width - 40)/4
-        let image_height :CGFloat = image_width
+        let image_width :CGFloat = (screen_width - 40)/3
+        let image_height :CGFloat = 100
         return CGSize(width: image_width, height: image_height)
     }
     

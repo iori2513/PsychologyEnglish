@@ -34,6 +34,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         usernameTextField.delegate = self
         emailTextField.delegate = self
         passwordTextField.delegate = self
+        //ナビゲーションバーを表示する
+        navigationController?.setNavigationBarHidden(false, animated: false)
         // Do any additional setup after loading the view.
     }
     

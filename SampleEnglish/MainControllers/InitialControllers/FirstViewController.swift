@@ -11,6 +11,11 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var SignUpButton: UIButton!
     @IBOutlet weak var logInButton: UIButton!
     
+    //ナビゲーションバーを非表示にする
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

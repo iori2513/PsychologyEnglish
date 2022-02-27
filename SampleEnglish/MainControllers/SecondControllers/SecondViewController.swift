@@ -8,10 +8,30 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    @IBOutlet weak var startButton: UIButton!
+    
+    @IBAction func pushStartButton(_ sender: Any) {
+        //単語帳に単語が存在しない場合は画面遷移させないようにする
+        if UserData().wordArray != [] {
+            performSegue(withIdentifier: "toMyWords", sender: nil)
+        }
+        else {
+            confirmAlert()
+        }
+    }
+    
+    //アラートを表示する
+    func confirmAlert() {
+        let confirmAlert = UIAlertController(title: "確認", message: "My単語腸に単語がありません", preferredStyle: .alert)
+        confirmAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: {
+            (action: UIAlertAction!) -> Void in
+            self.startButton.isSelected = false
+        }))
+        self.present(confirmAlert, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -19,6 +39,8 @@ class SecondViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
+    
+    
 
     /*
     // MARK: - Navigation

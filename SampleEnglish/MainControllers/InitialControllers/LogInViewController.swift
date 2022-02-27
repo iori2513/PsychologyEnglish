@@ -103,6 +103,8 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //ナビゲーションバーの表示
+        navigationController?.setNavigationBarHidden(false, animated: false)
         emailTextField.delegate = self
         passwordTextField.delegate = self
         
