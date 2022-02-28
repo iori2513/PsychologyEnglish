@@ -20,16 +20,19 @@ class Home_2_ViewController: UIViewController {
     var csvArray: [String] = []  //csvデータを配列にする際に用いる空の配列
     var switchArray: [Int] = []  //switchをONにした単語を記録するための配列
     var arrayNumber :Int = 0 //csvデータの要素数を数える変数
-    var partNumber: Int = 0 //どの単語のデータを選択するかを決める数字で値はHome_1_ViewControllerから引き継いでくる
+    var dataName: String = "" //どの単語のデータを選択するかを決める変数で値はHome_1_ViewControllerから引き継いでくる
     var checkedWordArray :[String] = []  //checkをつけた単語のデータを入れる配列
     // csvのデータを配列に変換する
     func loadCSV(fileName: String) -> [String] {
         let csvBundle = Bundle.main.path(forResource: fileName, ofType: "csv")!
         do {
             let csvData = try String(contentsOfFile: csvBundle, encoding: String.Encoding.utf8)
+            print(csvData)
             let lineChange = csvData.replacingOccurrences(of: "\r", with: "\n")
-            csvArray = lineChange.components(separatedBy: "\n")
+            print(lineChange)
+            csvArray = lineChange.components(separatedBy: "\n\n")
             csvArray.removeLast()
+            
         } catch {
             print("エラー")
         }
@@ -38,7 +41,8 @@ class Home_2_ViewController: UIViewController {
     
     //初期設定
     func firstSetting() {
-        csvArray = loadCSV(fileName: "sample_data_\(partNumber)")  //csvデータを読み込み、配列に変換する
+        csvArray = loadCSV(fileName: "\(dataName)")  //csvデータを読み込み、配列に変換する
+        print(csvArray)
         arrayNumber = csvArray.count
         meaningLabel.isHidden = true //初めは単語の意味を非表示にする
         setData()

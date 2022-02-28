@@ -22,7 +22,7 @@ class SecondViewController: UIViewController {
     
     //アラートを表示する
     func confirmAlert() {
-        let confirmAlert = UIAlertController(title: "確認", message: "My単語腸に単語がありません", preferredStyle: .alert)
+        let confirmAlert = UIAlertController(title: "確認", message: "My単語帳に単語がありません", preferredStyle: .alert)
         confirmAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: {
             (action: UIAlertAction!) -> Void in
             self.startButton.isSelected = false
