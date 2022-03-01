@@ -9,6 +9,7 @@ import UIKit
 
 class Home_3_ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var checkedWordTableView: UITableView!
+    @IBOutlet weak var saveButton: UIButton!
     
     var cellNumber: Int = 0  //tableViewCellの個数を表す変数で値はHome_2_ViewControllerから引き継いでくる
     var switchArray :[Int] = []  //Home_2_ViewControllerのswitchArrayを引き継ぐための配列
@@ -54,7 +55,18 @@ class Home_3_ViewController: UIViewController, UITableViewDelegate, UITableViewD
             userWordArray += [data]
         }
         UserData().wordArray = userWordArray
+        confirmAlert()
         print(UserData().wordArray)
+    }
+    
+    //確認のアラート表示
+    func confirmAlert() {
+        let confirmAlert = UIAlertController(title: "確認", message: "保存しました", preferredStyle: .alert)
+        confirmAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: {
+            (action: UIAlertAction!) -> Void in
+            self.saveButton.isHidden = true
+        }))
+        self.present(confirmAlert, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

@@ -112,6 +112,11 @@ class Home_2_ViewController: UIViewController {
         }
     }
     
+    @IBAction func pushedExitButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "result", sender: nil)
+    }
+    
+    
     // 変数の引き継ぎ
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let Home_3_VC = segue.destination as! Home_3_ViewController
