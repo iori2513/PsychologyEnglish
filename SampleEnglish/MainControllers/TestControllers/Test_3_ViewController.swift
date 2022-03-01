@@ -1,19 +1,21 @@
 //
-//  Second_2_ViewController.swift
+//  Home_3_ViewController.swift
 //  SampleEnglish
 //
-//  Created by 中田伊織 on 2022/02/25.
+//  Created by 中田伊織 on 2022/02/16.
 //
 
 import UIKit
 
-class Second_2_ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class Test_3_ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var checkedWordTableView: UITableView!
+    @IBOutlet weak var saveButton: UIButton!
     
-    var cellNumber: Int = 0  //tableViewCellの個数を表す変数で値はHome_2_ViewControllerから引き継いでくる
-    var switchArray :[Int] = []  //Home_2_ViewControllerのswitchArrayを引き継ぐための配列
-    var checkedWordArray :[String] = []  //checkをつけた単語のデータを入れる配列で値はHome_2_ViewControllerから引き継いでくる
+    var cellNumber: Int = 0  //tableViewCellの個数を表す変数で値はTest_2_ViewControllerから引き継いでくる
+    var switchArray :[Int] = []  //Test_2_ViewControllerのswitchArrayを引き継ぐための配列
+    var checkedWordArray :[String] = []  //checkをつけた単語のデータを入れる配列で値はTest_2_ViewControllerから引き継いでくる
     var userWordArray :[String] = []  //ユーザーのわからなかった単語をこの配列に入れてUserdefaultsに保存する
+    var cellCheckedWordArray :[String] = []
     
     
     //tableViewCellの個数を決める
@@ -24,9 +26,19 @@ class Second_2_ViewController: UIViewController, UITableViewDelegate, UITableVie
     //tableViewCellに表示する内容
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "checkedWordCell", for: indexPath)
-        let cellCheckedWordArray = checkedWordArray[indexPath.row].components(separatedBy: ",")
+        cellCheckedWordArray = checkedWordArray[indexPath.row].components(separatedBy: ",")
         cell.textLabel!.text = cellCheckedWordArray[0] + "・・・" + cellCheckedWordArray[1]
         return cell
+    }
+    
+    //tableViewCellを削除する処理
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            cellCheckedWordArray.remove(at: indexPath.row)
+            switchArray.remove(at: indexPath.row)
+            checkedWordTableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            print(cellCheckedWordArray)
+        }        
     }
     
     
@@ -34,16 +46,30 @@ class Second_2_ViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBAction func saveCheckedWordButton(_ sender: Any) {
         //現在のユーザーの復習用単語のデータを参照し、今回のテストでわからなかった単語と被りがないように保存する
         userWordArray = UserData().wordArray
+        var sameWordJudge: Bool = false
         for data in checkedWordArray {
             for userData in userWordArray {
                 if data == userData {
-                    break
+                    sameWordJudge = true
                 }
             }
-            userWordArray += [data]
+            if sameWordJudge == false {
+                userWordArray += [data]
+            }
         }
         UserData().wordArray = userWordArray
+        confirmAlert()
         print(UserData().wordArray)
+    }
+    
+    //確認のアラート表示
+    func confirmAlert() {
+        let confirmAlert = UIAlertController(title: "確認", message: "保存しました", preferredStyle: .alert)
+        confirmAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: {
+            (action: UIAlertAction!) -> Void in
+            self.saveButton.isSelected = false
+        }))
+        self.present(confirmAlert, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
@@ -51,9 +77,11 @@ class Second_2_ViewController: UIViewController, UITableViewDelegate, UITableVie
         navigationController?.setNavigationBarHidden(true, animated: false)
         print(checkedWordArray)
         print(UserData().wordArray)
+        checkedWordTableView.isEditing = true
 
         // Do any additional setup after loading the view.
     }
+    
 
     /*
     // MARK: - Navigation

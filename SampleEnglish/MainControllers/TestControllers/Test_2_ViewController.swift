@@ -1,13 +1,14 @@
 //
-//  Second_1_ViewController.swift
+//  Home_2_ViewController.swift
 //  SampleEnglish
 //
-//  Created by 中田伊織 on 2022/02/25.
+//  Created by 中田伊織 on 2022/02/11.
 //
 
 import UIKit
 
-class Second_1_ViewController: UIViewController {
+class Test_2_ViewController: UIViewController {
+
     @IBOutlet weak var wordCount: UILabel!
     @IBOutlet weak var mainWord: UILabel!
     @IBOutlet weak var meaningLabel: UILabel!
@@ -19,12 +20,29 @@ class Second_1_ViewController: UIViewController {
     var csvArray: [String] = []  //csvデータを配列にする際に用いる空の配列
     var switchArray: [Int] = []  //switchをONにした単語を記録するための配列
     var arrayNumber :Int = 0 //csvデータの要素数を数える変数
-    var partNumber: Int = 0 //どの単語のデータを選択するかを決める数字で値はHome_1_ViewControllerから引き継いでくる
+    var dataName: String = "" //どの単語のデータを選択するかを決める変数で値はTest_1_ViewControllerから引き継いでくる
     var checkedWordArray :[String] = []  //checkをつけた単語のデータを入れる配列
+    // csvのデータを配列に変換する
+    func loadCSV(fileName: String) -> [String] {
+        let csvBundle = Bundle.main.path(forResource: fileName, ofType: "csv")!
+        do {
+            let csvData = try String(contentsOfFile: csvBundle, encoding: String.Encoding.utf8)
+            print(csvData)
+            let lineChange = csvData.replacingOccurrences(of: "\r", with: "\n")
+            print(lineChange)
+            csvArray = lineChange.components(separatedBy: "\n\n")
+            csvArray.removeLast()
+            
+        } catch {
+            print("エラー")
+        }
+        return csvArray
+    }
     
     //初期設定
     func firstSetting() {
-        csvArray = UserData().wordArray
+        csvArray = loadCSV(fileName: "\(dataName)")  //csvデータを読み込み、配列に変換する
+        print(csvArray)
         arrayNumber = csvArray.count
         meaningLabel.isHidden = true //初めは単語の意味を非表示にする
         setData()
@@ -103,15 +121,14 @@ class Second_1_ViewController: UIViewController {
     
     // 変数の引き継ぎ
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let Second_2_VC = segue.destination as! Second_2_ViewController
-        Second_2_VC.switchArray = switchArray
-        Second_2_VC.checkedWordArray = checkedWordArray
+        let Home_3_VC = segue.destination as! Test_3_ViewController
+        Home_3_VC.switchArray = switchArray
+        Home_3_VC.checkedWordArray = checkedWordArray
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.setNavigationBarHidden(false, animated: false)
         firstSetting()
 
         // Do any additional setup after loading the view.

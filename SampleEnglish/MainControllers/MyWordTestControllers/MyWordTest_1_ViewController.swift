@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class MyWordTest_1_ViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     
     @IBAction func pushStartButton(_ sender: Any) {

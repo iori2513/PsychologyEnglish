@@ -7,13 +7,16 @@
 
 import UIKit
 
-class Home_1_ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class Test_1_ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
     var dataName: String = ""
     //csvデータのファイル名
     var csvNameArray: [String] = ["学習心理学", "感覚・知覚・認証", "社会心理学", "神経生理心理学", "性格・知能", "統計", "動機付け", "発達心理学", "臨床心理学", "all"]
     
+    //Test_3_ViewのHome画面に戻るボタンと紐付けるための記述
+    @IBAction func unwindSegue(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+    }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -55,15 +58,18 @@ class Home_1_ViewController: UIViewController, UICollectionViewDelegate, UIColle
 
     // 変数の引き継ぎ
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let Home_2_VC = segue.destination as! Home_2_ViewController
+        let Home_2_VC = segue.destination as! Test_2_ViewController
         Home_2_VC.dataName = dataName
+    }
+    
+    //ナビゲーションバーを非表示にする
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // ナビゲーションバーを表示する
-        navigationController?.setNavigationBarHidden(false, animated: false)
         collectionView.delegate = self
 
     }
