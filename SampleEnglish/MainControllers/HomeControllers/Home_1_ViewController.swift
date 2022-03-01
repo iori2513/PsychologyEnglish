@@ -12,7 +12,7 @@ class Home_1_ViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var collectionView: UICollectionView!
     var dataName: String = ""
     //csvデータのファイル名
-    var csvNameArray: [String] = ["学習心理学", "感覚・知覚・認証心理学", "社会心理学", "神経生理心理学", "性格・知能", "統計", "動機付け", "発達心理学", "臨床心理学", "all"]
+    var csvNameArray: [String] = ["学習心理学", "感覚・知覚・認証", "社会心理学", "神経生理心理学", "性格・知能", "統計", "動機付け", "発達心理学", "臨床心理学", "all"]
     
     
     
@@ -40,7 +40,7 @@ class Home_1_ViewController: UIViewController, UICollectionViewDelegate, UIColle
         // 機種ごとの横幅の値を取ってきて、それに応じてセルの横幅を決める
         let screen_width :CGFloat = UIScreen.main.bounds.size.width
         
-        let image_width :CGFloat = (screen_width - 40)/3
+        let image_width :CGFloat = (screen_width - 80)/2
         let image_height :CGFloat = 100
         return CGSize(width: image_width, height: image_height)
     }

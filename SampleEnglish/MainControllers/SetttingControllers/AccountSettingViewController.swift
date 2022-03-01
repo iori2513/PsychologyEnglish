@@ -103,10 +103,12 @@ class AccountSettingViewController: UIViewController, UITableViewDelegate, UITab
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(false, animated: true)
 
         // Do any additional setup after loading the view.
     }
     
+   
 
     /*
     // MARK: - Navigation
