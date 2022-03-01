@@ -46,13 +46,16 @@ class Home_3_ViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBAction func saveCheckedWordButton(_ sender: Any) {
         //現在のユーザーの復習用単語のデータを参照し、今回のテストでわからなかった単語と被りがないように保存する
         userWordArray = UserData().wordArray
+        var sameWordJudge: Bool = false
         for data in checkedWordArray {
             for userData in userWordArray {
                 if data == userData {
-                    break
+                    sameWordJudge = true
                 }
             }
-            userWordArray += [data]
+            if sameWordJudge == false {
+                userWordArray += [data]
+            }
         }
         UserData().wordArray = userWordArray
         confirmAlert()

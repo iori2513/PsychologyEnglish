@@ -94,7 +94,9 @@ class Second_1_ViewController: UIViewController {
         }
     }
     
+    //終了ボタンを押した際の処理
     @IBAction func pushedExitButton(_ sender: Any) {
+        putWordInCheckedWordArray()
         self.performSegue(withIdentifier: "result", sender: nil)
     }
     
