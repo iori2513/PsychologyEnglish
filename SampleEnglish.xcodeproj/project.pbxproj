@@ -20,6 +20,7 @@
 		76545D0F27CCDB9600831DB8 /* 動機付け.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76545D0C27CCDB9600831DB8 /* 動機付け.csv */; };
 		76545D1127CCDBC800831DB8 /* 学習心理学.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76545D1027CCDBC800831DB8 /* 学習心理学.csv */; };
 		76545D1527CCDCC200831DB8 /* all.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76545D1427CCDCC200831DB8 /* all.csv */; };
+		76545D1727CE1BEA00831DB8 /* MyWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76545D1627CE1BEA00831DB8 /* MyWordViewController.swift */; };
 		765FA1B9276E29A2001FF3DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */; };
 		766F704B27C8B88100A53182 /* Second_1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F704A27C8B88100A53182 /* Second_1_ViewController.swift */; };
 		766F704E27C8C70B00A53182 /* Second_2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F704D27C8C70B00A53182 /* Second_2_ViewController.swift */; };
@@ -59,6 +60,7 @@
 		76545D0C27CCDB9600831DB8 /* 動機付け.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "動機付け.csv"; sourceTree = "<group>"; };
 		76545D1027CCDBC800831DB8 /* 学習心理学.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "学習心理学.csv"; sourceTree = "<group>"; };
 		76545D1427CCDCC200831DB8 /* all.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = all.csv; sourceTree = "<group>"; };
+		76545D1627CE1BEA00831DB8 /* MyWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWordViewController.swift; sourceTree = "<group>"; };
 		765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		765FA1C0276F9F62001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765FA1C4276F9F67001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +173,7 @@
 			children = (
 				766F704F27C8E41D00A53182 /* SettingViewController.swift */,
 				766F705227C9F48500A53182 /* AccountSettingViewController.swift */,
+				76545D1627CE1BEA00831DB8 /* MyWordViewController.swift */,
 			);
 			path = SetttingControllers;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				766F704E27C8C70B00A53182 /* Second_2_ViewController.swift in Sources */,
 				7699417427B66BB70048FB12 /* Home_2_ViewController.swift in Sources */,
 				766F705027C8E41D00A53182 /* SettingViewController.swift in Sources */,
+				76545D1727CE1BEA00831DB8 /* MyWordViewController.swift in Sources */,
 				76D86159271BCEC3007853BA /* AppDelegate.swift in Sources */,
 				7699417127B636F30048FB12 /* FirstViewController.swift in Sources */,
 				764F12BC27BCDEFD003BFBF9 /* Home_3_ViewController.swift in Sources */,
