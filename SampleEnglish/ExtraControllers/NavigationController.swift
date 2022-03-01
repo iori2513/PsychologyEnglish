@@ -7,15 +7,20 @@
 
 import UIKit
 
-class NavigationController: UINavigationController {
+class NavigationController: UIViewController, UINavigationBarDelegate {
+    @IBOutlet weak var navigationBar: UINavigationBar!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationBar.delegate = self
 
         // Do any additional setup after loading the view.
     }
     
+    func position(for bar: UIBarPositioning) -> UIBarPosition {
+            return .topAttached
+        }
 //    func position(for bar: UIBarPositioning) -> UIBarPosition {
 //            return .topAttached
 //        }
