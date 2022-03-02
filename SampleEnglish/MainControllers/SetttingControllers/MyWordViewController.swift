@@ -8,6 +8,9 @@
 import UIKit
 
 class MyWordViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var myWordTableView: UITableView!
+    @IBOutlet weak var editButton: UIButton!
+    
     
     var myWordArray: [String] = []  //Userdefaultsから単語帳に保存しているデータを取得するための配列
     
@@ -27,13 +30,33 @@ class MyWordViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.textLabel!.text = wordDataArray[0] + "・・・" + wordDataArray[1]
         return cell
     }
+    
+    //tableViewCellを削除する処理
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            myWordArray.remove(at: indexPath.row)
+            UserData().wordArray = myWordArray
+            myWordTableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+        }
+    }
+    
+    @IBAction func pushEditButton(_ sender: Any) {
+        if myWordTableView.isEditing == false {
+            myWordTableView.setEditing(true, animated: true)
+            editButton.setTitle("終了する", for: .normal)
+        }
+        else {
+            myWordTableView.setEditing(false, animated: true)
+            editButton.setTitle("編集する", for: .normal)
+        }
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //ナビゲーションバーを表示する
         navigationController?.setNavigationBarHidden(false, animated: true)
         getData()
-        // Do any additional setup after loading the view.
     }
     
 

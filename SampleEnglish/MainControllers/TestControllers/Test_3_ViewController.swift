@@ -10,7 +10,7 @@ import UIKit
 class Test_3_ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var checkedWordTableView: UITableView!
     @IBOutlet weak var saveButton: UIButton!
-    
+    @IBOutlet weak var editButton: UIButton!
     var cellNumber: Int = 0  //tableViewCellの個数を表す変数で値はTest_2_ViewControllerから引き継いでくる
     var switchArray :[Int] = []  //Test_2_ViewControllerのswitchArrayを引き継ぐための配列
     var checkedWordArray :[String] = []  //checkをつけた単語のデータを入れる配列で値はTest_2_ViewControllerから引き継いでくる
@@ -20,7 +20,7 @@ class Test_3_ViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     //tableViewCellの個数を決める
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return switchArray.count
+        return checkedWordArray.count
     }
     
     //tableViewCellに表示する内容
@@ -34,10 +34,10 @@ class Test_3_ViewController: UIViewController, UITableViewDelegate, UITableViewD
     //tableViewCellを削除する処理
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            cellCheckedWordArray.remove(at: indexPath.row)
-            switchArray.remove(at: indexPath.row)
+            print(checkedWordArray)
+            checkedWordArray.remove(at: indexPath.row)
             checkedWordTableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
-            print(cellCheckedWordArray)
+            
         }        
     }
     
@@ -72,12 +72,22 @@ class Test_3_ViewController: UIViewController, UITableViewDelegate, UITableViewD
         self.present(confirmAlert, animated: true, completion: nil)
     }
     
+    
+    @IBAction func pushEditButton(_ sender: Any) {
+        if checkedWordTableView.isEditing == false {
+            checkedWordTableView.setEditing(true, animated: true)
+            editButton.setTitle("終了する", for: .normal)
+        }
+        else {
+            checkedWordTableView.setEditing(false, animated: true)
+            editButton.setTitle("編集する", for: .normal)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationController?.setNavigationBarHidden(false, animated: true)
         print(checkedWordArray)
-        print(UserData().wordArray)
-        checkedWordTableView.isEditing = true
 
         // Do any additional setup after loading the view.
     }

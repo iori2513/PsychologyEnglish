@@ -83,7 +83,6 @@ class MyWordTest_2_ViewController: UIViewController {
         }
         if sender.isOn == false {
             switchArray.removeLast()
-            
         }
     }
     
