@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Accounts
 
 class SettingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
@@ -32,8 +33,35 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
             performSegue(withIdentifier: "myWords", sender: nil)
         }
         if indexPath.row == 2 {
-            
+            shareApp()
         }
+    }
+    
+    //共有画面を表示する
+    func shareApp() {
+        let shareText = "Sample Text"
+        let shareWebsite = NSURL(string: "https://github.com/iori2513")!
+        let activityItems = [shareText, shareWebsite] as [Any]
+        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+
+        let excludedActivityTypes = [
+        UIActivity.ActivityType.postToFacebook,
+        UIActivity.ActivityType.postToTwitter,
+        UIActivity.ActivityType.message,
+        UIActivity.ActivityType.saveToCameraRoll,
+        UIActivity.ActivityType.print
+        ]
+
+        activityVC.excludedActivityTypes = excludedActivityTypes
+        self.present(activityVC, animated: true, completion: nil)
+        //tableViewの選択状態を元に戻す
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
 
     override func viewDidLoad() {

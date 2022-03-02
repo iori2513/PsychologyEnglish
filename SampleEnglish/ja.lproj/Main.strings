@@ -1,0 +1,240 @@
+
+/* Class = "UIBarButtonItem"; title = "Title"; ObjectID = "0U7-XK-mQa"; */
+"0U7-XK-mQa.title" = "Title";
+
+/* Class = "UIButton"; configuration.title = "Send"; ObjectID = "0vx-tw-eLr"; */
+"0vx-tw-eLr.configuration.title" = "Send";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0vx-tw-eLr"; */
+"0vx-tw-eLr.normalTitle" = "Button";
+
+/* Class = "UIViewController"; title = "SettingViewController"; ObjectID = "2ID-Wg-2uO"; */
+"2ID-Wg-2uO.title" = "SettingViewController";
+
+/* Class = "UILabel"; text = "My単語帳"; ObjectID = "2oV-5S-8UM"; */
+"2oV-5S-8UM.text" = "My単語帳";
+
+/* Class = "UIViewController"; title = "LogInViewController"; ObjectID = "3Yt-oA-4Rw"; */
+"3Yt-oA-4Rw.title" = "LogInViewController";
+
+/* Class = "UILabel"; text = "Checked Words"; ObjectID = "3uq-5H-15j"; */
+"3uq-5H-15j.text" = "Checked Words";
+
+/* Class = "UILabel"; text = "メールアドレス"; ObjectID = "5mL-TI-X2r"; */
+"5mL-TI-X2r.text" = "メールアドレス";
+
+/* Class = "UILabel"; text = "りんご"; ObjectID = "8bC-0f-r1G"; */
+"8bC-0f-r1G.text" = "りんご";
+
+/* Class = "UINavigationItem"; title = "PsychologyEnglish"; ObjectID = "9L6-hZ-AvF"; */
+"9L6-hZ-AvF.title" = "PsychologyEnglish";
+
+/* Class = "UILabel"; text = "メールアドレス"; ObjectID = "9Rh-Lh-z0o"; */
+"9Rh-Lh-z0o.text" = "メールアドレス";
+
+/* Class = "UITextField"; placeholder = "例）english1234"; ObjectID = "9XD-Oo-0av"; */
+"9XD-Oo-0av.placeholder" = "例）english1234";
+
+/* Class = "UIButton"; configuration.title = "こちら"; ObjectID = "9d6-Lo-s5q"; */
+"9d6-Lo-s5q.configuration.title" = "こちら";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9d6-Lo-s5q"; */
+"9d6-Lo-s5q.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "終了する"; ObjectID = "ArG-I0-ecR"; */
+"ArG-I0-ecR.configuration.title" = "終了する";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ArG-I0-ecR"; */
+"ArG-I0-ecR.normalTitle" = "Button";
+
+/* Class = "UITabBarController"; title = "TabBarController"; ObjectID = "BYH-n2-ARy"; */
+"BYH-n2-ARy.title" = "TabBarController";
+
+/* Class = "UIViewController"; title = "FirstViewController"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "FirstViewController";
+
+/* Class = "UILabel"; text = "apple"; ObjectID = "BxW-qJ-oYk"; */
+"BxW-qJ-oYk.text" = "apple";
+
+/* Class = "UITextField"; placeholder = "例）english@gmail.com"; ObjectID = "D7b-cE-Svw"; */
+"D7b-cE-Svw.placeholder" = "例）english@gmail.com";
+
+/* Class = "UIButton"; configuration.title = "Back to Home"; ObjectID = "FEF-67-Tqc"; */
+"FEF-67-Tqc.configuration.title" = "Back to Home";
+
+/* Class = "UIButton"; configuration.title = "終了する"; ObjectID = "FnK-1R-aO5"; */
+"FnK-1R-aO5.configuration.title" = "終了する";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FnK-1R-aO5"; */
+"FnK-1R-aO5.normalTitle" = "Button";
+
+/* Class = "UIViewController"; title = "AccountSettingViewController"; ObjectID = "FoL-3T-d1m"; */
+"FoL-3T-d1m.title" = "AccountSettingViewController";
+
+/* Class = "UIButton"; configuration.title = "こちら"; ObjectID = "Ghh-2h-seH"; */
+"Ghh-2h-seH.configuration.title" = "こちら";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ghh-2h-seH"; */
+"Ghh-2h-seH.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "例）english1234"; ObjectID = "IcC-fu-qrl"; */
+"IcC-fu-qrl.placeholder" = "例）english1234";
+
+/* Class = "UIViewController"; title = "Second_1_ViewController"; ObjectID = "ImS-Hk-AWF"; */
+"ImS-Hk-AWF.title" = "Second_1_ViewController";
+
+/* Class = "UIButton"; configuration.title = "SignIn"; ObjectID = "KmL-uB-Kcf"; */
+"KmL-uB-Kcf.configuration.title" = "SignIn";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KmL-uB-Kcf"; */
+"KmL-uB-Kcf.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "check"; ObjectID = "L7g-Ji-poB"; */
+"L7g-Ji-poB.text" = "check";
+
+/* Class = "UIBarButtonItem"; title = "LogIn"; ObjectID = "Maj-wa-mE3"; */
+"Maj-wa-mE3.title" = "LogIn";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "N3c-EM-uXI"; */
+"N3c-EM-uXI.text" = "Title";
+
+/* Class = "UIViewController"; title = "SignUpViewController"; ObjectID = "ODP-jP-tZP"; */
+"ODP-jP-tZP.title" = "SignUpViewController";
+
+/* Class = "UIBarButtonItem"; title = "LogIn"; ObjectID = "OJE-Wj-EAC"; */
+"OJE-Wj-EAC.title" = "LogIn";
+
+/* Class = "UILabel"; text = "設定"; ObjectID = "OVo-J0-1pt"; */
+"OVo-J0-1pt.text" = "設定";
+
+/* Class = "UIButton"; normalTitle = "Answer"; ObjectID = "Q6r-YA-j3V"; */
+"Q6r-YA-j3V.normalTitle" = "Answer";
+
+/* Class = "UILabel"; text = "SignUp"; ObjectID = "QIf-ol-rCr"; */
+"QIf-ol-rCr.text" = "SignUp";
+
+/* Class = "UILabel"; text = "Select the Part"; ObjectID = "Qix-tK-UuH"; */
+"Qix-tK-UuH.text" = "Select the Part";
+
+/* Class = "UIViewController"; title = "SecondViewController"; ObjectID = "Sah-qX-QNS"; */
+"Sah-qX-QNS.title" = "SecondViewController";
+
+/* Class = "UILabel"; text = "ユーザーネーム"; ObjectID = "VQD-wr-hJp"; */
+"VQD-wr-hJp.text" = "ユーザーネーム";
+
+/* Class = "UIButton"; configuration.title = "Back to Home"; ObjectID = "VXg-nM-CtJ"; */
+"VXg-nM-CtJ.configuration.title" = "Back to Home";
+
+/* Class = "UIViewController"; title = "Home_1_ViewController"; ObjectID = "WTO-N2-yEh"; */
+"WTO-N2-yEh.title" = "Home_1_ViewController";
+
+/* Class = "UIButton"; normalTitle = "Answer"; ObjectID = "Xw2-W4-0Ah"; */
+"Xw2-W4-0Ah.normalTitle" = "Answer";
+
+/* Class = "UITextField"; placeholder = "例）英語　太郎"; ObjectID = "YXH-5y-Z1j"; */
+"YXH-5y-Z1j.placeholder" = "例）英語　太郎";
+
+/* Class = "UITextField"; placeholder = "例）english@gmail.com"; ObjectID = "Zkm-d8-boT"; */
+"Zkm-d8-boT.placeholder" = "例）english@gmail.com";
+
+/* Class = "UIViewController"; title = "ForgetViewController"; ObjectID = "Zw0-S5-xAQ"; */
+"Zw0-S5-xAQ.title" = "ForgetViewController";
+
+/* Class = "UIViewController"; title = "Home_2_ViewController"; ObjectID = "aZc-TT-bE0"; */
+"aZc-TT-bE0.title" = "Home_2_ViewController";
+
+/* Class = "UILabel"; text = "パスワード"; ObjectID = "bEh-ve-C6l"; */
+"bEh-ve-C6l.text" = "パスワード";
+
+/* Class = "UIViewController"; title = "MyWordViewController"; ObjectID = "bKm-co-RW7"; */
+"bKm-co-RW7.title" = "MyWordViewController";
+
+/* Class = "UILabel"; text = "My単語帳"; ObjectID = "bPB-lA-tmo"; */
+"bPB-lA-tmo.text" = "My単語帳";
+
+/* Class = "UIButton"; configuration.title = "Start"; ObjectID = "bkd-FT-5vC"; */
+"bkd-FT-5vC.configuration.title" = "Start";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bkd-FT-5vC"; */
+"bkd-FT-5vC.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "LogIn"; ObjectID = "cSx-18-Th5"; */
+"cSx-18-Th5.configuration.title" = "LogIn";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cSx-18-Th5"; */
+"cSx-18-Th5.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "パスワード"; ObjectID = "cYP-ec-NpV"; */
+"cYP-ec-NpV.text" = "パスワード";
+
+/* Class = "UILabel"; text = "りんご"; ObjectID = "cih-et-iM2"; */
+"cih-et-iM2.text" = "りんご";
+
+/* Class = "UILabel"; text = "Checked Words"; ObjectID = "dXl-Uw-eSZ"; */
+"dXl-Uw-eSZ.text" = "Checked Words";
+
+/* Class = "UILabel"; text = "アカウント設定"; ObjectID = "de6-v1-3Rn"; */
+"de6-v1-3Rn.text" = "アカウント設定";
+
+/* Class = "UILabel"; text = "パスワードを忘れた方は"; ObjectID = "g2i-fB-fDZ"; */
+"g2i-fB-fDZ.text" = "パスワードを忘れた方は";
+
+/* Class = "UILabel"; text = "No. 1"; ObjectID = "gLm-z5-iIW"; */
+"gLm-z5-iIW.text" = "No. 1";
+
+/* Class = "UIBarButtonItem"; title = "SignUp"; ObjectID = "ibS-Rt-ark"; */
+"ibS-Rt-ark.title" = "SignUp";
+
+/* Class = "UILabel"; text = "No. 1"; ObjectID = "jtj-OW-1Uh"; */
+"jtj-OW-1Uh.text" = "No. 1";
+
+/* Class = "UILabel"; text = "LogIn"; ObjectID = "kKL-lg-uVZ"; */
+"kKL-lg-uVZ.text" = "LogIn";
+
+/* Class = "UIButton"; configuration.title = "復習用単語に保存"; ObjectID = "l3P-5H-ywA"; */
+"l3P-5H-ywA.configuration.title" = "復習用単語に保存";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "l3P-5H-ywA"; */
+"l3P-5H-ywA.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "My単語帳"; ObjectID = "mjA-Ib-G9J"; */
+"mjA-Ib-G9J.title" = "My単語帳";
+
+/* Class = "UIViewController"; title = "Second_2_ViewController"; ObjectID = "mwK-sb-uXG"; */
+"mwK-sb-uXG.title" = "Second_2_ViewController";
+
+/* Class = "UILabel"; text = "check"; ObjectID = "rAt-fZ-a7f"; */
+"rAt-fZ-a7f.text" = "check";
+
+/* Class = "UILabel"; text = "apple"; ObjectID = "rGE-YL-lYz"; */
+"rGE-YL-lYz.text" = "apple";
+
+/* Class = "UITabBarItem"; title = "test"; ObjectID = "rTl-tp-Jus"; */
+"rTl-tp-Jus.title" = "test";
+
+/* Class = "UIButton"; configuration.title = "Register"; ObjectID = "rjj-8l-Wrd"; */
+"rjj-8l-Wrd.configuration.title" = "Register";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rjj-8l-Wrd"; */
+"rjj-8l-Wrd.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "LogIn"; ObjectID = "s5y-sV-ySe"; */
+"s5y-sV-ySe.configuration.title" = "LogIn";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "s5y-sV-ySe"; */
+"s5y-sV-ySe.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "例）english@gmail.com"; ObjectID = "sOf-D8-WyP"; */
+"sOf-D8-WyP.placeholder" = "例）english@gmail.com";
+
+/* Class = "UITabBarItem"; title = "設定"; ObjectID = "vQo-pg-DqK"; */
+"vQo-pg-DqK.title" = "設定";
+
+/* Class = "UILabel"; text = "メールアドレス"; ObjectID = "wJ5-Q7-Nqb"; */
+"wJ5-Q7-Nqb.text" = "メールアドレス";
+
+/* Class = "UILabel"; text = "Part1"; ObjectID = "wzg-a8-VDz"; */
+"wzg-a8-VDz.text" = "Part1";
+
+/* Class = "UILabel"; text = "既にアカウントをお持ちの方は"; ObjectID = "ytj-d0-q81"; */
+"ytj-d0-q81.text" = "既にアカウントをお持ちの方は";

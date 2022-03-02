@@ -60,6 +60,8 @@
 		76545D1027CCDBC800831DB8 /* 学習心理学.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "学習心理学.csv"; sourceTree = "<group>"; };
 		76545D1427CCDCC200831DB8 /* all.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = all.csv; sourceTree = "<group>"; };
 		76545D1627CE1BEA00831DB8 /* MyWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWordViewController.swift; sourceTree = "<group>"; };
+		76545D1827CF4F6100831DB8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		76545D1927CF4F6100831DB8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		765FA1C0276F9F62001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765FA1C4276F9F67001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -288,6 +290,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 76D8614C271BCEC3007853BA;
 			packageReferences = (
@@ -401,6 +404,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				76D8615F271BCEC3007853BA /* Base */,
+				76545D1827CF4F6100831DB8 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -409,6 +413,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				76D86164271BCEC8007853BA /* Base */,
+				76545D1927CF4F6100831DB8 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -481,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
