@@ -25,6 +25,7 @@ class MyWordTest_2_ViewController: UIViewController {
     //初期設定
     func firstSetting() {
         csvArray = UserData().wordArray
+        csvArray.shuffle()
         arrayNumber = csvArray.count
         meaningLabel.isHidden = true //初めは単語の意味を非表示にする
         setData()

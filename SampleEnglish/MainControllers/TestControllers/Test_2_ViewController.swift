@@ -42,6 +42,7 @@ class Test_2_ViewController: UIViewController {
     //初期設定
     func firstSetting() {
         csvArray = loadCSV(fileName: "\(dataName)")  //csvデータを読み込み、配列に変換する
+        csvArray.shuffle()
         print(csvArray)
         arrayNumber = csvArray.count
         meaningLabel.isHidden = true //初めは単語の意味を非表示にする
