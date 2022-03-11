@@ -930,22 +930,6 @@
                                     <segue destination="Qn2-le-rYG" kind="unwind" unwindAction="unwindSegueFor:towards:" id="NKr-wN-IGz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3P-5H-ywA">
-                                <rect key="frame" x="50" y="497" width="275" height="50"/>
-                                <color key="backgroundColor" red="0.69739075120000005" green="0.77202418360000002" blue="0.97534233329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="YsJ-9z-rJQ"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="My単語帳に保存">
-                                    <fontDescription key="titleFontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="saveCheckedWordButton:" destination="hJJ-T2-UeM" eventType="touchUpInside" id="dHe-qh-Bcc"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tfR-jf-460">
                                 <rect key="frame" x="0.0" y="159" width="375" height="298"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -973,26 +957,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qL0-OC-kWS">
+                                <rect key="frame" x="50" y="497" width="275" height="50"/>
+                                <color key="backgroundColor" red="0.69739075120000005" green="0.77202418360000002" blue="0.97534233329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GpQ-bs-C2f"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My単語帳に保存">
+                                    <fontDescription key="titleFontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveCheckedWordButton:" destination="hJJ-T2-UeM" eventType="touchUpInside" id="PP9-2b-cfc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cuH-sO-jjY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="l3P-5H-ywA" firstAttribute="top" secondItem="tfR-jf-460" secondAttribute="bottom" constant="40" id="Bnp-T9-k4R"/>
                             <constraint firstItem="tfR-jf-460" firstAttribute="trailing" secondItem="cuH-sO-jjY" secondAttribute="trailing" id="CVT-0u-GOX"/>
                             <constraint firstItem="cuH-sO-jjY" firstAttribute="bottom" secondItem="VXg-nM-CtJ" secondAttribute="bottom" constant="50" id="DWA-LL-8Jf"/>
                             <constraint firstItem="tfR-jf-460" firstAttribute="leading" secondItem="cuH-sO-jjY" secondAttribute="leading" id="Iwt-Rw-4LU"/>
+                            <constraint firstItem="VXg-nM-CtJ" firstAttribute="top" secondItem="qL0-OC-kWS" secondAttribute="bottom" constant="20" id="LAh-X6-GW9"/>
                             <constraint firstItem="dXl-Uw-eSZ" firstAttribute="top" secondItem="cuH-sO-jjY" secondAttribute="top" constant="30" id="Tfc-Cn-ymP"/>
                             <constraint firstItem="VXg-nM-CtJ" firstAttribute="centerX" secondItem="B6F-6g-7B3" secondAttribute="centerX" id="Vpg-Vb-ipW"/>
+                            <constraint firstItem="qL0-OC-kWS" firstAttribute="leading" secondItem="cuH-sO-jjY" secondAttribute="leading" constant="50" id="Wnr-xo-2el"/>
                             <constraint firstItem="cuH-sO-jjY" firstAttribute="trailing" secondItem="dXl-Uw-eSZ" secondAttribute="trailing" constant="50" id="bhi-Os-jNz"/>
                             <constraint firstItem="cuH-sO-jjY" firstAttribute="trailing" secondItem="VXg-nM-CtJ" secondAttribute="trailing" constant="50" id="dMn-42-X3F"/>
                             <constraint firstItem="tfR-jf-460" firstAttribute="centerX" secondItem="B6F-6g-7B3" secondAttribute="centerX" id="eGw-eU-QiV"/>
                             <constraint firstItem="VXg-nM-CtJ" firstAttribute="leading" secondItem="cuH-sO-jjY" secondAttribute="leading" constant="50" id="ftT-t6-k0F"/>
-                            <constraint firstItem="cuH-sO-jjY" firstAttribute="trailing" secondItem="l3P-5H-ywA" secondAttribute="trailing" constant="50" id="gyy-PF-FUU"/>
-                            <constraint firstItem="VXg-nM-CtJ" firstAttribute="top" secondItem="l3P-5H-ywA" secondAttribute="bottom" constant="20" id="jUr-2U-lNW"/>
                             <constraint firstItem="tfR-jf-460" firstAttribute="top" secondItem="dXl-Uw-eSZ" secondAttribute="bottom" constant="30" id="k8W-Iq-Dw6"/>
                             <constraint firstItem="dXl-Uw-eSZ" firstAttribute="leading" secondItem="cuH-sO-jjY" secondAttribute="leading" constant="50" id="nJ6-sk-oQA"/>
-                            <constraint firstItem="l3P-5H-ywA" firstAttribute="leading" secondItem="cuH-sO-jjY" secondAttribute="leading" constant="50" id="qFY-Id-TmS"/>
+                            <constraint firstItem="cuH-sO-jjY" firstAttribute="trailing" secondItem="qL0-OC-kWS" secondAttribute="trailing" constant="50" id="ruz-bl-LSr"/>
                             <constraint firstItem="dXl-Uw-eSZ" firstAttribute="centerX" secondItem="B6F-6g-7B3" secondAttribute="centerX" id="use-Q4-v2U"/>
+                            <constraint firstItem="qL0-OC-kWS" firstAttribute="top" secondItem="tfR-jf-460" secondAttribute="bottom" constant="40" id="xXs-9N-Elp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="r4H-OH-goi">
@@ -1021,7 +1020,7 @@
                     <connections>
                         <outlet property="checkedWordTableView" destination="tfR-jf-460" id="5Dp-Pb-0WP"/>
                         <outlet property="editButton" destination="NLN-9E-0B9" id="ry4-80-kGa"/>
-                        <outlet property="saveButton" destination="l3P-5H-ywA" id="QYI-8o-bfw"/>
+                        <outlet property="saveButton" destination="qL0-OC-kWS" id="g2K-WI-lMd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsb-kF-GHb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

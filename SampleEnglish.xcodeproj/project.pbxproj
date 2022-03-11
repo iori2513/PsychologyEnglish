@@ -21,6 +21,8 @@
 		76545D1127CCDBC800831DB8 /* 学習心理学.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76545D1027CCDBC800831DB8 /* 学習心理学.csv */; };
 		76545D1527CCDCC200831DB8 /* all.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76545D1427CCDCC200831DB8 /* all.csv */; };
 		76545D1727CE1BEA00831DB8 /* MyWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76545D1627CE1BEA00831DB8 /* MyWordViewController.swift */; };
+		76545D1F27D7722C00831DB8 /* 一般(1).csv in Resources */ = {isa = PBXBuildFile; fileRef = 76545D1E27D7722C00831DB8 /* 一般(1).csv */; };
+		76545D2127D7725E00831DB8 /* 一般(2).csv in Resources */ = {isa = PBXBuildFile; fileRef = 76545D2027D7725E00831DB8 /* 一般(2).csv */; };
 		765FA1B9276E29A2001FF3DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */; };
 		766F704B27C8B88100A53182 /* MyWordTest_2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F704A27C8B88100A53182 /* MyWordTest_2_ViewController.swift */; };
 		766F704E27C8C70B00A53182 /* MyWordTest_3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F704D27C8C70B00A53182 /* MyWordTest_3_ViewController.swift */; };
@@ -62,6 +64,8 @@
 		76545D1627CE1BEA00831DB8 /* MyWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWordViewController.swift; sourceTree = "<group>"; };
 		76545D1827CF4F6100831DB8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		76545D1927CF4F6100831DB8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		76545D1E27D7722C00831DB8 /* 一般(1).csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "一般(1).csv"; sourceTree = "<group>"; };
+		76545D2027D7725E00831DB8 /* 一般(2).csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "一般(2).csv"; sourceTree = "<group>"; };
 		765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		765FA1C0276F9F62001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765FA1C4276F9F67001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				76545D0027CCDADC00831DB8 /* 臨床心理学.csv */,
+				76545D1E27D7722C00831DB8 /* 一般(1).csv */,
+				76545D2027D7725E00831DB8 /* 一般(2).csv */,
 				76545D0227CCDB4700831DB8 /* 性格・知能.csv */,
 				76545D0427CCDB7900831DB8 /* 感覚・知覚・認証.csv */,
 				76545D0627CCDB8900831DB8 /* 社会心理学.csv */,
@@ -319,7 +325,9 @@
 				76545D1527CCDCC200831DB8 /* all.csv in Resources */,
 				76545D0827CCDB8900831DB8 /* 社会心理学.csv in Resources */,
 				76545D0527CCDB7900831DB8 /* 感覚・知覚・認証.csv in Resources */,
+				76545D1F27D7722C00831DB8 /* 一般(1).csv in Resources */,
 				7680F09D27C11E1900005F76 /* LAContext.h in Resources */,
+				76545D2127D7725E00831DB8 /* 一般(2).csv in Resources */,
 				76545D1127CCDBC800831DB8 /* 学習心理学.csv in Resources */,
 				76545D0127CCDADC00831DB8 /* 臨床心理学.csv in Resources */,
 				76D86162271BCEC8007853BA /* Assets.xcassets in Resources */,
