@@ -1,2 +1,1 @@
-# PsychologyEnglish
-心理学英単語ios
+英単語アプリ
