@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class MyWordTest_2_ViewController: UIViewController {
     @IBOutlet weak var wordCount: UILabel!
@@ -21,6 +22,7 @@ class MyWordTest_2_ViewController: UIViewController {
     var arrayNumber :Int = 0 //csvデータの要素数を数える変数
     var partNumber: Int = 0 //どの単語のデータを選択するかを決める数字で値はMyWordTest_1_ViewControllerから引き継いでくる
     var checkedWordArray :[String] = []  //checkをつけた単語のデータを入れる配列
+    var bannerView: GADBannerView! //広告
     
     //初期設定
     func firstSetting() {
@@ -59,6 +61,7 @@ class MyWordTest_2_ViewController: UIViewController {
                 setData()  //次の問題のデータを読み込む
                 nextButton.setTitle("Answer", for: .normal)
                 checkSwitch.isOn = false
+                bannerView.load(GADRequest())
             }
         }
         else {
@@ -108,10 +111,44 @@ class MyWordTest_2_ViewController: UIViewController {
         
     }
     
+    // 広告の詳細設定
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                               attribute: .bottom,
+                               relatedBy: .equal,
+                               toItem: view.safeAreaLayoutGuide,
+                               attribute: .bottom,
+                               multiplier: 1,
+                               constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+    }
+    
+    //広告の挿入
+    func putInBanner() {
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        bannerView.adUnitID = "ca-app-pub-9481353025497177/3498464525"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        addBannerViewToView(bannerView)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(false, animated: false)
         firstSetting()
+        putInBanner()
 
         // Do any additional setup after loading the view.
     }
