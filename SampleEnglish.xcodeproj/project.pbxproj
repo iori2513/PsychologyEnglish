@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D83E46B39D8D807CEB4937B /* Pods_SampleEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB83B1D8D1CBFBAB546B32D /* Pods_SampleEnglish.framework */; };
+		080AD95A13752F18172F1EF0 /* Pods_SampleEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299D4ABA6ECFDE64D0408D6C /* Pods_SampleEnglish.framework */; };
 		764F12BC27BCDEFD003BFBF9 /* Test_3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F12BB27BCDEFD003BFBF9 /* Test_3_ViewController.swift */; };
 		764F12BE27C0C4FC003BFBF9 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F12BD27C0C4FC003BFBF9 /* UserData.swift */; };
 		76545D1727CE1BEA00831DB8 /* MyWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76545D1627CE1BEA00831DB8 /* MyWordViewController.swift */; };
-		765FA1B9276E29A2001FF3DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */; };
 		766F704B27C8B88100A53182 /* MyWordTest_2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F704A27C8B88100A53182 /* MyWordTest_2_ViewController.swift */; };
 		766F704E27C8C70B00A53182 /* MyWordTest_3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F704D27C8C70B00A53182 /* MyWordTest_3_ViewController.swift */; };
 		766F705027C8E41D00A53182 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F704F27C8E41D00A53182 /* SettingViewController.swift */; };
@@ -23,30 +22,33 @@
 		76B118DE2783D72100EC6CAF /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B118DD2783D72100EC6CAF /* FirebaseAuth.framework */; };
 		76B118E22783D72800EC6CAF /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B118E12783D72800EC6CAF /* FirebaseCore.framework */; };
 		76B118E42783D73600EC6CAF /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765FA1CA276F9F8F001FF3DC /* FirebaseAnalytics.xcframework */; };
-		76B4215727FD767A00100121 /* part2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76B4215527FD767A00100121 /* part2.csv */; };
-		76B4215827FD767A00100121 /* part1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76B4215627FD767A00100121 /* part1.csv */; };
-		76B4215A27FD7A2800100121 /* ２次試験対策(1).csv in Resources */ = {isa = PBXBuildFile; fileRef = 76B4215927FD7A2800100121 /* ２次試験対策(1).csv */; };
-		76B4215C27FD7A9300100121 /* ２次試験対策(2).csv in Resources */ = {isa = PBXBuildFile; fileRef = 76B4215B27FD7A9300100121 /* ２次試験対策(2).csv */; };
-		76B4215E27FD7ABA00100121 /* ２次試験対策(3).csv in Resources */ = {isa = PBXBuildFile; fileRef = 76B4215D27FD7ABA00100121 /* ２次試験対策(3).csv */; };
-		76B4216027FD7B3400100121 /* 共通テスト対策(1).csv in Resources */ = {isa = PBXBuildFile; fileRef = 76B4215F27FD7B3400100121 /* 共通テスト対策(1).csv */; };
-		76B4216227FD7B4C00100121 /* 共通テスト対策(2).csv in Resources */ = {isa = PBXBuildFile; fileRef = 76B4216127FD7B4C00100121 /* 共通テスト対策(2).csv */; };
-		76B4216427FD7B5D00100121 /* 共通テスト対策(3).csv in Resources */ = {isa = PBXBuildFile; fileRef = 76B4216327FD7B5D00100121 /* 共通テスト対策(3).csv */; };
-		76B4216627FD7F4100100121 /* All.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76B4216527FD7F4100100121 /* All.csv */; };
 		76D86159271BCEC3007853BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D86158271BCEC3007853BA /* AppDelegate.swift */; };
 		76D8615B271BCEC3007853BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8615A271BCEC3007853BA /* SceneDelegate.swift */; };
 		76D86160271BCEC3007853BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D8615E271BCEC3007853BA /* Main.storyboard */; };
 		76D86162271BCEC8007853BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D86161271BCEC8007853BA /* Assets.xcassets */; };
 		76D86165271BCEC8007853BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D86163271BCEC8007853BA /* LaunchScreen.storyboard */; };
+		76FD49B528095602002B34AB /* 神経生理心理学.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76FD49A928095601002B34AB /* 神経生理心理学.csv */; };
+		76FD49B628095602002B34AB /* 社会心理学.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76FD49AA28095601002B34AB /* 社会心理学.csv */; };
+		76FD49B728095602002B34AB /* 統計.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76FD49AB28095601002B34AB /* 統計.csv */; };
+		76FD49B828095602002B34AB /* 臨床心理学.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76FD49AC28095601002B34AB /* 臨床心理学.csv */; };
+		76FD49B928095602002B34AB /* 学習心理学.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76FD49AD28095601002B34AB /* 学習心理学.csv */; };
+		76FD49BA28095602002B34AB /* 一般(2).csv in Resources */ = {isa = PBXBuildFile; fileRef = 76FD49AE28095601002B34AB /* 一般(2).csv */; };
+		76FD49BB28095602002B34AB /* 動機付け.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76FD49AF28095601002B34AB /* 動機付け.csv */; };
+		76FD49BC28095602002B34AB /* 感覚・知覚・認証.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76FD49B028095602002B34AB /* 感覚・知覚・認証.csv */; };
+		76FD49BD28095602002B34AB /* 性格・知能.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76FD49B128095602002B34AB /* 性格・知能.csv */; };
+		76FD49BE28095602002B34AB /* 発達心理学.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76FD49B228095602002B34AB /* 発達心理学.csv */; };
+		76FD49BF28095602002B34AB /* all.csv in Resources */ = {isa = PBXBuildFile; fileRef = 76FD49B328095602002B34AB /* all.csv */; };
+		76FD49C028095602002B34AB /* 一般(1).csv in Resources */ = {isa = PBXBuildFile; fileRef = 76FD49B428095602002B34AB /* 一般(1).csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D05823F05BB48A86150CF4C /* Pods-SampleEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleEnglish.debug.xcconfig"; path = "Target Support Files/Pods-SampleEnglish/Pods-SampleEnglish.debug.xcconfig"; sourceTree = "<group>"; };
+		299D4ABA6ECFDE64D0408D6C /* Pods_SampleEnglish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleEnglish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F9117FF927307E9C2BA4FD7 /* Pods-SampleEnglish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleEnglish.release.xcconfig"; path = "Target Support Files/Pods-SampleEnglish/Pods-SampleEnglish.release.xcconfig"; sourceTree = "<group>"; };
 		764F12BB27BCDEFD003BFBF9 /* Test_3_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_3_ViewController.swift; sourceTree = "<group>"; };
 		764F12BD27C0C4FC003BFBF9 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserData.swift; path = SampleEnglish/UserData.swift; sourceTree = SOURCE_ROOT; };
 		76545D1627CE1BEA00831DB8 /* MyWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWordViewController.swift; sourceTree = "<group>"; };
 		76545D1827CF4F6100831DB8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		76545D1927CF4F6100831DB8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		765FA1C0276F9F62001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765FA1C4276F9F67001FF3DC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765FA1C7276F9F70001FF3DC /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,15 +63,6 @@
 		76A5B9D12794018E003CBD0A /* MyWordTest_1_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWordTest_1_ViewController.swift; sourceTree = "<group>"; };
 		76B118DD2783D72100EC6CAF /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B118E12783D72800EC6CAF /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76B4215527FD767A00100121 /* part2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = part2.csv; sourceTree = "<group>"; };
-		76B4215627FD767A00100121 /* part1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = part1.csv; sourceTree = "<group>"; };
-		76B4215927FD7A2800100121 /* ２次試験対策(1).csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "２次試験対策(1).csv"; sourceTree = "<group>"; };
-		76B4215B27FD7A9300100121 /* ２次試験対策(2).csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "２次試験対策(2).csv"; sourceTree = "<group>"; };
-		76B4215D27FD7ABA00100121 /* ２次試験対策(3).csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "２次試験対策(3).csv"; sourceTree = "<group>"; };
-		76B4215F27FD7B3400100121 /* 共通テスト対策(1).csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "共通テスト対策(1).csv"; sourceTree = "<group>"; };
-		76B4216127FD7B4C00100121 /* 共通テスト対策(2).csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "共通テスト対策(2).csv"; sourceTree = "<group>"; };
-		76B4216327FD7B5D00100121 /* 共通テスト対策(3).csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "共通テスト対策(3).csv"; sourceTree = "<group>"; };
-		76B4216527FD7F4100100121 /* All.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = All.csv; sourceTree = "<group>"; };
 		76D86155271BCEC3007853BA /* SampleEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D86158271BCEC3007853BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76D8615A271BCEC3007853BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,8 +70,19 @@
 		76D86161271BCEC8007853BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D86164271BCEC8007853BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76D86166271BCEC8007853BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BB83B1D8D1CBFBAB546B32D /* Pods_SampleEnglish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleEnglish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0B3DDF0B16783BE4E6BF4B7 /* Pods-SampleEnglish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleEnglish.release.xcconfig"; path = "Target Support Files/Pods-SampleEnglish/Pods-SampleEnglish.release.xcconfig"; sourceTree = "<group>"; };
+		76FD49A928095601002B34AB /* 神経生理心理学.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "神経生理心理学.csv"; sourceTree = "<group>"; };
+		76FD49AA28095601002B34AB /* 社会心理学.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "社会心理学.csv"; sourceTree = "<group>"; };
+		76FD49AB28095601002B34AB /* 統計.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "統計.csv"; sourceTree = "<group>"; };
+		76FD49AC28095601002B34AB /* 臨床心理学.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "臨床心理学.csv"; sourceTree = "<group>"; };
+		76FD49AD28095601002B34AB /* 学習心理学.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "学習心理学.csv"; sourceTree = "<group>"; };
+		76FD49AE28095601002B34AB /* 一般(2).csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "一般(2).csv"; sourceTree = "<group>"; };
+		76FD49AF28095601002B34AB /* 動機付け.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "動機付け.csv"; sourceTree = "<group>"; };
+		76FD49B028095602002B34AB /* 感覚・知覚・認証.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "感覚・知覚・認証.csv"; sourceTree = "<group>"; };
+		76FD49B128095602002B34AB /* 性格・知能.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "性格・知能.csv"; sourceTree = "<group>"; };
+		76FD49B228095602002B34AB /* 発達心理学.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "発達心理学.csv"; sourceTree = "<group>"; };
+		76FD49B328095602002B34AB /* all.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = all.csv; sourceTree = "<group>"; };
+		76FD49B428095602002B34AB /* 一般(1).csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "一般(1).csv"; sourceTree = "<group>"; };
+		D0044C5A19885220DD3E1149 /* Pods-SampleEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleEnglish.debug.xcconfig"; path = "Target Support Files/Pods-SampleEnglish/Pods-SampleEnglish.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +93,7 @@
 				76B118E42783D73600EC6CAF /* FirebaseAnalytics.xcframework in Frameworks */,
 				76B118E22783D72800EC6CAF /* FirebaseCore.framework in Frameworks */,
 				76B118DE2783D72100EC6CAF /* FirebaseAuth.framework in Frameworks */,
-				4D83E46B39D8D807CEB4937B /* Pods_SampleEnglish.framework in Frameworks */,
+				080AD95A13752F18172F1EF0 /* Pods_SampleEnglish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +109,7 @@
 				765FA1C7276F9F70001FF3DC /* FirebaseCore.framework */,
 				765FA1C4276F9F67001FF3DC /* FirebaseAuth.framework */,
 				765FA1C0276F9F62001FF3DC /* FirebaseAuth.framework */,
-				9BB83B1D8D1CBFBAB546B32D /* Pods_SampleEnglish.framework */,
+				299D4ABA6ECFDE64D0408D6C /* Pods_SampleEnglish.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,15 +117,18 @@
 		766F704527C3979C00A53182 /* WordData */ = {
 			isa = PBXGroup;
 			children = (
-				76B4215627FD767A00100121 /* part1.csv */,
-				76B4215527FD767A00100121 /* part2.csv */,
-				76B4215927FD7A2800100121 /* ２次試験対策(1).csv */,
-				76B4215B27FD7A9300100121 /* ２次試験対策(2).csv */,
-				76B4215D27FD7ABA00100121 /* ２次試験対策(3).csv */,
-				76B4215F27FD7B3400100121 /* 共通テスト対策(1).csv */,
-				76B4216127FD7B4C00100121 /* 共通テスト対策(2).csv */,
-				76B4216327FD7B5D00100121 /* 共通テスト対策(3).csv */,
-				76B4216527FD7F4100100121 /* All.csv */,
+				76FD49B328095602002B34AB /* all.csv */,
+				76FD49B428095602002B34AB /* 一般(1).csv */,
+				76FD49AE28095601002B34AB /* 一般(2).csv */,
+				76FD49AD28095601002B34AB /* 学習心理学.csv */,
+				76FD49B028095602002B34AB /* 感覚・知覚・認証.csv */,
+				76FD49AA28095601002B34AB /* 社会心理学.csv */,
+				76FD49A928095601002B34AB /* 神経生理心理学.csv */,
+				76FD49B128095602002B34AB /* 性格・知能.csv */,
+				76FD49AB28095601002B34AB /* 統計.csv */,
+				76FD49AF28095601002B34AB /* 動機付け.csv */,
+				76FD49B228095602002B34AB /* 発達心理学.csv */,
+				76FD49AC28095601002B34AB /* 臨床心理学.csv */,
 			);
 			path = WordData;
 			sourceTree = "<group>";
@@ -195,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				7680F09C27C11E1900005F76 /* LAContext.h */,
-				765FA1B8276E29A2001FF3DC /* GoogleService-Info.plist */,
 				76D86158271BCEC3007853BA /* AppDelegate.swift */,
 				76D8615A271BCEC3007853BA /* SceneDelegate.swift */,
 				764F12BD27C0C4FC003BFBF9 /* UserData.swift */,
@@ -213,8 +219,8 @@
 		885026E2455075D20F325A5B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2D05823F05BB48A86150CF4C /* Pods-SampleEnglish.debug.xcconfig */,
-				D0B3DDF0B16783BE4E6BF4B7 /* Pods-SampleEnglish.release.xcconfig */,
+				D0044C5A19885220DD3E1149 /* Pods-SampleEnglish.debug.xcconfig */,
+				6F9117FF927307E9C2BA4FD7 /* Pods-SampleEnglish.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -226,11 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76D86169271BCEC8007853BA /* Build configuration list for PBXNativeTarget "SampleEnglish" */;
 			buildPhases = (
-				0BFF95CD0369C159E361859A /* [CP] Check Pods Manifest.lock */,
+				70B82D51163AB4EA6D3671DE /* [CP] Check Pods Manifest.lock */,
 				76D86151271BCEC3007853BA /* Sources */,
 				76D86152271BCEC3007853BA /* Frameworks */,
 				76D86153271BCEC3007853BA /* Resources */,
-				FCA2B956A43A51D367CCF38F /* [CP] Embed Pods Frameworks */,
+				BEB2D18A50CC3490BADAE5E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,27 +288,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76B4216427FD7B5D00100121 /* 共通テスト対策(3).csv in Resources */,
-				76B4215C27FD7A9300100121 /* ２次試験対策(2).csv in Resources */,
-				76B4216627FD7F4100100121 /* All.csv in Resources */,
+				76FD49BA28095602002B34AB /* 一般(2).csv in Resources */,
+				76FD49C028095602002B34AB /* 一般(1).csv in Resources */,
 				76D86165271BCEC8007853BA /* LaunchScreen.storyboard in Resources */,
-				765FA1B9276E29A2001FF3DC /* GoogleService-Info.plist in Resources */,
+				76FD49B728095602002B34AB /* 統計.csv in Resources */,
 				7680F09D27C11E1900005F76 /* LAContext.h in Resources */,
-				76B4215827FD767A00100121 /* part1.csv in Resources */,
-				76B4215A27FD7A2800100121 /* ２次試験対策(1).csv in Resources */,
-				76B4215727FD767A00100121 /* part2.csv in Resources */,
-				76B4216227FD7B4C00100121 /* 共通テスト対策(2).csv in Resources */,
+				76FD49BE28095602002B34AB /* 発達心理学.csv in Resources */,
+				76FD49B628095602002B34AB /* 社会心理学.csv in Resources */,
+				76FD49BF28095602002B34AB /* all.csv in Resources */,
+				76FD49B828095602002B34AB /* 臨床心理学.csv in Resources */,
+				76FD49B928095602002B34AB /* 学習心理学.csv in Resources */,
+				76FD49BD28095602002B34AB /* 性格・知能.csv in Resources */,
+				76FD49B528095602002B34AB /* 神経生理心理学.csv in Resources */,
 				76D86162271BCEC8007853BA /* Assets.xcassets in Resources */,
+				76FD49BC28095602002B34AB /* 感覚・知覚・認証.csv in Resources */,
 				76D86160271BCEC3007853BA /* Main.storyboard in Resources */,
-				76B4215E27FD7ABA00100121 /* ２次試験対策(3).csv in Resources */,
-				76B4216027FD7B3400100121 /* 共通テスト対策(1).csv in Resources */,
+				76FD49BB28095602002B34AB /* 動機付け.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BFF95CD0369C159E361859A /* [CP] Check Pods Manifest.lock */ = {
+		70B82D51163AB4EA6D3671DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,7 +332,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCA2B956A43A51D367CCF38F /* [CP] Embed Pods Frameworks */ = {
+		BEB2D18A50CC3490BADAE5E1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -507,7 +515,7 @@
 		};
 		76D8616A271BCEC8007853BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D05823F05BB48A86150CF4C /* Pods-SampleEnglish.debug.xcconfig */;
+			baseConfigurationReference = D0044C5A19885220DD3E1149 /* Pods-SampleEnglish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -529,7 +537,7 @@
 		};
 		76D8616B271BCEC8007853BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0B3DDF0B16783BE4E6BF4B7 /* Pods-SampleEnglish.release.xcconfig */;
+			baseConfigurationReference = 6F9117FF927307E9C2BA4FD7 /* Pods-SampleEnglish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

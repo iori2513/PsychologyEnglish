@@ -12,7 +12,8 @@ class Test_1_ViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var collectionView: UICollectionView!
     var dataName: String = ""
     //csvデータのファイル名
-    var csvNameArray: [String] = ["共通テスト対策(1)", "共通テスト対策(2)", "共通テスト対策(3)", "２次試験対策(1)", "２次試験対策(2)", "２次試験対策(3)", "All"]
+    var csvNameArray: [String] = ["学習心理学", "感覚・知覚・認証", "社会心理学", "神経生理心理学", "性格・知能", "統計", "動機付け", "発達心理学", "臨床心理学", "一般(1)", "一般(2)", "all"]
+        
     
     //Test_3_ViewのHome画面に戻るボタンと紐付けるための記述
     @IBAction func unwindSegue(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {

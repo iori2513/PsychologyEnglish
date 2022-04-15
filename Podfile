@@ -6,7 +6,6 @@ target 'SampleEnglish' do
   use_frameworks!
 
   # Pods for SampleEnglish
-
   pod 'Firebase/Auth'
 
   pod 'Firebase/Core'

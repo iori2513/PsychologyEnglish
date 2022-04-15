@@ -34,7 +34,7 @@ class Test_2_ViewController: UIViewController {
             print(csvData)
             let lineChange = csvData.replacingOccurrences(of: "\r", with: "\n")
             print(lineChange)
-            csvArray = lineChange.components(separatedBy: "\n")
+            csvArray = lineChange.components(separatedBy: "\n\n")
             csvArray.removeLast()
             
         } catch {

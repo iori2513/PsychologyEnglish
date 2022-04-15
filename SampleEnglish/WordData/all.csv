@@ -1,200 +1,596 @@
-guarantee,保証
-merchant,商人
-dedicate,〜に捧げる
-bias,偏見
-speculator,投機家
-diabetes,糖尿病
-mature,成熟した
-reinforce,強化する
-dimension,寸法
-avoid,避ける
-administration,管理
-bother,悩ます
-restrain,抑制する
-stimulation,刺激
-offset,相殺する
-affirm,断言する
-considerably,かなり
-demonstration,証明
-arouse,覚醒させる
-constitute,構成する
-superb,素晴らしい
-segment,区切り
-literacy,読み書きの能力
-dignity,尊厳
-soak,浸す
-fierce,激しい
-irony,皮肉
-disregard,無視する
-presume,推定する
-luxurious,贅沢な
-chronic,慢性の
-testify,証言する
-investigate,調査
-cencus,国勢調査
-chore,雑用
-emit,放出する
-tolerant,寛容
-prevail,流行している
-perceptive,知覚の
-extraordinary,並外れた
-affluent,豊富な
-dormitory,寮
-brief,短時間の
-encount,遭遇する
-attorney,弁護士
-coincidence,一致
-accurate,正確な
-expend,費やす
-determine,決定する
-assume,推測する
-estimate,見積もる
-vary,変化
-encounter,出会い
-discipline,規律
-colony,植民地
-beverage,飲料
-interfere,干渉する
-deceive,欺く
-patent,特許
-pronounce,発音する
-astonish,驚かす
-spectator,観客
-optimistic,楽観的
-confine,制限する
-retail,小売り
-vivid,鮮やか
-prosperity,繁栄する
-parliament,議会
-correspond,一致する
-conform,従う
-induce,誘発する
-oblige,〜しなければならない
-provoke,挑発する
-soar,急上昇
-scenery,景色
-contradict,矛盾する
-strive,努力
-hostile,敵対的
-justify,正当化する
-expel,追放する
-distribute,分配する
-prevent,防ぐ
-resume,再開する
-hinder,妨げる
-mere,単なる
-eager,しきりに〜したがる
-discard,破棄する
-orphan,孤児
-misery,惨め
-jealous,嫉妬
-vocation,職業
-contemplate,熟考する
-conceive,想像する
-conceit,うぬぼれ
-superstition,迷信
-currency,通貨
-diminish,減少する
-comprise,〜から成る
-decay,腐敗する
-allow,許可する
-reduce,減らす
-increase,増加する
-decrease,減少する
-realize,気づく
-force,力
-avoid,避ける
-notice,気が付く
-quality,質
-quantity,量
-complete,完了する
-theory,仮説
-figure,形
-industry,産業
-species,種類
-effect,効果
-individual,個人
-available,利用可能な
-particular,特に
-various,様々な
-instead,代わり
-suppose,仮定する
-regard,〜とみなす
-attend,出席
-base,基礎
-aspect,側面
-detail,詳細
-establish,設立する
-found,設立する
-spread,広まる
-expand,拡大する
-restrict,制限する
-freedom,自由
-prohibit,禁止する
-forgive,許す
-destination,目的地
-imagine,想像する
-execute,実行する
-raise,高める
-compare,比較する
-maintain,維持する
-demand,要求する
-supply,供給する
-regulate,規制する
-intelligent,知的な
-government,政府
+clinical,臨床的な
+depression,抑うつ
+unconscious,無意識的な
+grief,悲嘆
+abuse,虐待
+conscious,意識的な
+practice,実践する
+distress,ストレス、苦悩
+intervention,回遊
+coping,対処法
+maltreatment,虐待
+schizophrenia,統合失調症
+traumatic,トラウマ、外傷的な
+boundary,境界
+diagnosis,診断
+substance abuse,薬物乱用
+bereaved,先立たれた
+project,投影する
+severity,（症状の）重さ
+chronic,慢性的な
+autism,自閉症
+psychic,心的、内的
+rumination,反すう
+identification,同一視、同一化
+victim,被害者
+withdrawal,ひきこもり
+compensation,補償
+healing,癒し、修復
+narcissistic,自己愛的な
+bullying,いじめ
+disturbance,障害、問題
+mental illness,精神疾患
+posttraumatic,(心的)外傷後の
+alliance,同盟
+anorexia nervosa,拒食症、神経性無食欲症
+cognitive therapy,認知療法
+collective unconscious,集合的無意識
+countertransference,逆転移
+irrational,不合理な
+neurosis,神経症
+play therapy,遊戯療法
+regression,退行
+separarion-individuation,個性化
+addiction,中毒
+cohesion,凝集性
+compulsive,強迫的な
+dialogue,対話
+medication,薬物治療
+relief,安堵
+etiology,病因論
+major depression,大うつ病
+maladjustment,不適応
+substance dependence,薬物依存
+congruence,自己一致
+dysphoric,不快な
+impulse,衝動
+infantile autism,早期幼児自閉症
+paranoia,妄想
+psychosomatic,心身の
+rational-emotive therapy,論理情動理論
+thinness,やせ
+urge,衝動
+unipolar,単極性の
+acting out,行動化
+agoraphobia,広場恐怖
+antidepressant,抗うつ剤
+applied behavioral analysis,応用行動分析
+autogenic training,自律訓練法
+bipolar disorder,双極性障害
+bulmia nervosa,過食症、神経性大食症
+co-dependency,共依存
+conversion disorder,転換性障害
+delirium,せん妄
+delusion,妄想
+dementia,認知症
+dissociative disorder,解離性障害
+dissociative fugue,解離性遁走
+dissociative identity disorder,解離性障害
+dysthymic disorder,気分変調性障害
+endogenous,内因性の
+flooding,フラッディング
+hallucination,厳格
+hypochondriasis,心気症
+insomnia,不眠症
+intrusive thought,侵入思考
+irrational belief,不合理な信念
+mental retardation,精神遅滞
+mutism,かん黙
+narcissistic personality disorder,自己愛性パーソナリティ障害
+paranoid personality disorder,妄想性パーソナリティ障害
+paranoid-schizoid position,妄想－分裂ポジション
+pervasive developmental disorder,広汎性発達障害
+psychogenic,心因性の
+rationalization,合理化
+recurrence,再発
+schizoid personality disorder,スキゾイドパーソナリティ障害
+schizotypal personality disorder,統合失調型パーソナリティ障害
+socia anxiety disorder,社交性不安障害
+splitting,分裂
+sublimation,昇華
+systematic desensitization,系統的脱感作法
+transactional analysis,交流分析
+unconditional positive regard,無条件の肯定的関心
+working through,徹底操作
+wound,傷つき
+as-if personality,かのようなパーソナリティ
+general adaption syndrome,汎適応症候群
+good-enough mother,ほどよい母親
+obsessive-compulsive disorder,強迫性障害
+autonomy,自律性
+juveenile,青少年の
+secure,安全な
+maternal,母の
+novel,新奇な
+bond,絆
+caregiver,養育者
+longevity,長寿
+puberty,思春期
+assimilation,同化
+accommodation,調節
+temper,気質、かんしゃく
+weaning,離乳
+habituation,馴化
+intimate,親密な
+primitive,原始的な
+temperament,気質、かんしゃく
+toddler,幼児、よちよち歩きの子
+cohort,コホート
+concrete operation stage,具体的操作機
+critical period,臨界期
+egocentrism,自己中心性
+epigenetic theory,漸成説
+foreclosure,早期完了
+identity diffusion,アイデンティティ拡散
+maternal deprivation,母性剥奪
+object permanence,対象の永続性
+preoperational period,前操作期
+tantrum,かんしゃく
+zone of proximal development,発達の最近接領域
+visual cliff,視覚的断崖
+vocalization,発声
+midlife crisis,中年期危機
+condition,条件
+mean,平均
+rate,評定する
+significantly,有意に
+interaction,交互作用
+scale,尺度
+population,母集団
+procedure,手続き
+validity,妥当性
+causal,原因の
+variable,変数
+examine,調査する
+null hypothesis,帰無仮説
+variance,分散
+manipulation,操作
+correlation,相関・相関関係
+index,指標
+introspection,内観
+reliability,信頼性
+statement,項目、発言
+external validity,外的妥当性
+inventory,質問紙
+quantitative,量的な
+psychometric,心理測定の
+replicate,追試する・再現する
+subscale,下位尺度
+dependent variable,従属変数
+internal validity,内的妥当性
+assign (AtoB) ,(AをBに)割りあてる
+effect size,効果量
+internal consistency,内的整合性
+significant difference,有意差
+test-retest reliability,再検査信頼性
+administer,実施する
+coefficient,係数
+confounding,交絡
+counterbalance,相殺
+nominal scale,名義尺度
+normal distribution,正規分布
+ordinal scale,順序尺度
+outlier,外れ値
+ratio scale,比率尺度
+regression analysis,回帰分析
+semi-structured,半構造化
+situation sampling method,場面見本法
+double bind test,二重盲検法
+solitary,孤独
+attraction,魅力
+authority,権威
+imitate,模倣する
+isolation,孤立
+misattribution,誤帰属
+reciprocal,互恵的な
+social referencing,社会的参照
+appearance,見かけの
+comformity,同調
+delinquent,非行の
+obedience,服従
+persuasive,説得力のある
+prejudice,偏見
+altruism,愛他的な
+bystander effect,傍観者効果
+cautious shift,コ―シャルシフト
+cognitive dissonance theory,認知的不協和理論
+elaboration likehood model,精緻化見込みモデル
+fundamental attribution error,根本的帰属の誤り
+group polarzation,集団分極化
+norm,規範
+positive illusion,ポジティブ幻想
+prisoners' delemma,囚人のジレンマ
+prosocial behavior,向社会的行動
+self-fulfilling prorhecy,自己成就的予言
+self-presentation,自己呈示
+social facilitation,社会的促進
+social loafing,社会的手抜き
+zero-sum game,ゼロサムゲーム
+confirmation bias,確証バイアス
+diffusion of responsibility,責任の分散
+mere exposure effect,単純接触効果
+recognition,再認
+perception,知覚
+auditory,聴覚
+inhibition,抑制
+duration,持続時間
+adaptation,適応
+implicit,潜在的な
+explicit,顕在的な
+representation,表象
+short-term memory,短期記憶
+induction,帰納法
+rehearsal,リハーサル
+retrieve,検索する
+store,貯蔵する
+analogy,類推
+visual field,視野
+autbiographical,自伝的な
+information processing,情報処理
+optical,視覚の
+proactive,順向性の
+retroactive,逆向性の
+retina,網膜
+retina image,網膜像
+configuration,配置
+intuition,直観
+recollection,記憶
+retention,保持
+threshold,閾
+apparent movement,仮現運動
+binocular,両眼
+monocular,単眼
+binocular disparity,両眼視差
+cone,錐体
+declearative memory,宣言的記憶
+deduction,演繹法
+divergent thinking,拡散的思考
+elaboration,精緻化
+encode,符号化
+episodic memory,エピソード記憶
+heuristics,ヒューリスティックス
+just noticeable differences,丁度可知差異
+mental rotation,心的回転
+nonsense syllable,無意味つづり
+point of subjective equality,主観的等価点
+procedural memory,手続き記憶
+prospective memory,展望記憶
+psychophysics,精神物理学
+reconstruct,再構築する
+rod,桿体
+semantic memory,意味記憶
+sensory memory,感覚記憶
+size constancy,大きさの恒常性
+autokinetic movement,自動運動
+distal stimulus,遠刺激
+proximal stimulus,近刺激
+functional fixedness,機能的固着
+induced motion,誘導運動
+motion after effect,運動残効
+pattern recognition,パターン認知
+perceptual constancy,知覚の恒常性
+subjective counter,主観的輪郭
+avoidance,回避
+reinforcement,強化
+elicit,誘発する
+aversive,嫌悪的な
+transfer,転移
+induce,誘導
+discrimination,弁別
+unconditioned,無条件の
+reinforcer,強化子
+extinction,消去
+instrumental conditioning,道具的条件付け
+Premack principle,プレマックの原理
+vicariously,代理的に
+Apititude Treatment Interaction,適正処遇交互作用
+contingency,随伴性
+differentiation,分化
+intermittent reinforcement,間歇強化
+latent learning,潜在学習
+shaping,シェイピング
+continuous reinforcement,連続強化
+spontaneous recovery,自発的回復
+experimentl neurosis,実験神経症
+law of effect,効果の法則
+leraned helplessness,学習性無力感
+lerning set,学習の構え
+omission training,オミッショントレーニング
+taxis,走性
+arousal,覚醒
+psysiological,生理学的な
+hemisphere,半球
+cortex,皮質
+immune,免疫のある
+cerebral cortex,大脳皮質
+fight-or-flight response,闘争逃走反応
+hipppocampus,海馬
+placebo,プラシーボ
+amygdala,偏桃体
+neuroimaging,神経画像
+neurotransmitter,神経伝達物質
+organ,臓器
+plasticity,可塑性
+prefrontal cortex,前頭前皮質
+temporal lobe,側頭葉
+action potential,活動電位
+amnesia,健忘症
+corpus callosum,脳梁
+electroencephalogram,脳波
+event-related potentional,事象関連電位
+frontal lobe,前頭葉
+hypothalamus,視床下部
+lateralize,側性化
+occipital lobe,後頭葉
+parasympathetic nervous system,副交感神経系
+pariental lobe,頭頂葉
+peripheral,末梢の
+split brain,分離脳
+sympathetic nervous system,交感神経系
+thalamus,視床
+ulcer,潰瘍
+chronological age,生活年齢
+pessimistic,悲観的な
+predisposition,傾向
+trait,特性
+self-efficacy,自己効力感
+authoritarian personality,権威主義的パーソナリティ
+convergent thinking,収束的思考
+crystallised intelligence,結晶性知能
+fluid intelligence,流動性知能
+divergent thinking,拡散的思考
+extroversion,外向性
+idiographic,個性記述的
+intelligence quontient,知能指数
+introversion,内向性
+nomothetic,法則定立的
+optimist,楽観主義者
+projective technique,投影法
+theory of multiple intelligence,多重知能理論
+trait theory,特性論
+typology,類型論
+triarchic theory,鼎立理論
+agreeableness,協調性
+conscientiousness,誠実性
+lie scale,虚偽尺度
+openness,解放性
+social desirability,社会的望ましさ
+Thematic Apperception Test,主題統覚検査
+terror,恐怖
+annoyance,いらだち
+distraction,気晴らし
+hostility,敵意
+hyperarousal,過覚醒
+intrinsic,内発的な
+unpleasant,不快な
+hierarchy,階層
+malicious,悪意のある
+affiliation motivation,親和動機付け
+functional autonomy,機能的自律性
+primary need,一次的欲求
+secondary need,二次的欲求
+undermining effect,アンダーマイニング効果
+contempt,軽蔑
+deficieny needs,欠乏欲求
+detour behavior,迂回行動
+euphoria,多幸感
+motive to avoid success,成功回避同期
+order,秩序
+school,学派
+period,期間
+common,一般の
+present,現在の、提示する
+nature,性質、本質
+context,文脈、背景、状況
+difficulty,障害、困難
 appropriate,適切な
-content,内容
+external,外的な
+interpersonal,対人関係の
+notion,概念、考え
+orientation,方向付け
+adjustment,調整
+material,刺激
+indicate,示唆する
+severe,重度な
+subjective,主観的な
+consistent,一貫した
+phase,段階、時期
+emphasis,強調、重視
+complicated,複雑な
+frequently,頻繁に
+concern,関係する、心配させる
+identify,特定する、同一化する
+impairment,障害、損傷
+serious,深刻な
+attempt,試みる
+finding,結果
+alternative,選択肢
+critical,重大な、批判的な
+deal with,扱う
+empirical,実証的な、経験的な
+principle,原則
+represent,表す
+underlying,根底にある、基礎をなす
+classification,分類
+epistemic,認識論の、認識の
+overcome,克服する
+rely,依存する、頼る
+activation,活性化
+assume,想定する、仮定する
+draw,導き出す
+facilitate,促進する
+note,書き留める、注意する
+objective,客観的な
+race,種
+relevant,関連する、妥当な
+convey,伝える
+encounter,直面する、出会う
+multiple,複数の
+rigid,柔軟性のない
+sequence,連続
+shape,方向付ける、形成する
+apparent,明白な、見かけ上の
+concrete,具体的な
+engage,携わる
+ethical,倫理的な
+expect,期待する
+premise,前提、仮定
+regard,見なす、評価する、考える
+systematic,体系的な
+crucial,決定的な、重要な
+consequence,結果
+demonstrate,証明する
+ideal,理想
+discipline,学問、訓練、規律
+intense,激しい、強い
+intensity,強度、激しさ
+realize,認識する、理解する
+sensitivity,感受性
+stability,安定性
+universal,普遍的な、一般的な
+inference,推論
+interpret,解釈する
+principal,主要な、重要な
+sophisticated,洗練された、高度な
+agency,仲介
+ambiguous,曖昧な、多義的な
+attribute,帰属する、〜のせいにする
+discrete,ばらばらの、個々の
+evaluate,評価する
+intact,無傷の、完全な
+ordinary,いつもの
+readily,容易に
+survival,生存
+accomplish,達成する
+deliberate,故意に、慎重な
+evoke,引き起こす
+identical,同一の、一卵性の
+manifestation,表れ
+profound,重大な、批判的な
+valence,感情価
+adverse,有害な、逆の
+appreciation,認識、理解
+comprehensive,包括的な、広範囲の
+discriminate,区別する、弁別する
+enhance,高める
+foster,育成する
+innate,生得的な
+inspection,調査、検査
+intensive,集中的な、徹底的な
+internalizing,内在化した
+inherent,固有の、生まれつきの
+integrate,統合する
+intention,相互作用する
+overlap,重複
+prevalence,有病率
+prohibition,禁止
+reasonable,合理的な
+realm,領域
+replace,再発
+simultaneously,同時に
+superficial,表層的な
+surrounding,環境
+temporary,一次的な
+transmission,伝達
+controversy,論争
+voluntary,自発的な
+continuity,連続性
+employ,使う、野党
+extensive,広範囲の
+implication,意味、ほのめかし
+incidence,発生
+magnitude,大きさ
+moderate,中程度の
+outline,概説する
+pose,提示する
+priority,優先事項
+contradictory,対立した、矛盾した
+entity,実体
+excessive,過剰な
+exert,行使する
+inevitably,必然的に
+intake,摂取
+interfere,妨害する
+interrelated,相互に関係のある
+mataphor,メタファー
+mortality rate,死亡率
+mutual,相互の
+odd,奇妙な
+persist,主張する、固執する
+pursuit,追求、研究
+reassurance,再確認、再保証
+repertoire,レパートリー
+repetition,反復
+resist,抵抗する
+self-directed,自発的な
+static,静的な、固定的な
+suppress,抑制する
+suspicion,疑い
+undergraduate,大学生
+uniform,同一の
+vulnerable,〜を受けやすい、〜に弱い
+credibility,信用性
+eclecticism,折衷論
+fragile,もろい
+illuminate,明らかにする
+incorporate,組み入れる
+vulnerability,脆弱性
+inferior,劣った
+initiate,始める
+insistence,主張、こだわり
+instinct,本能
+intricate,複雑な
+justify,正当化する、弁明する
+mention,述べる
+overestimate,過大評価する
+proceed,進む、〜し続ける
+prominence,卓越
+prospect,見通し
+provoke,引き起こす
+puzzle,悩ませる
+raw,加工していない
+refine,改良する
+restore,資源
+scrutinize,精査する、吟味する
+synthesize,統合する
+transient,一時的な
+undergo,経験する、〜を受ける
+accompany,伴わせる
+alleviate,軽減する
+colleague,仲間
+confuse,混乱する
+connotation,意味
+correspond,一致する
+defect,障害、欠点
 derive,由来する
-observe,観察する
-company,会社
-propose,提案する
-absolute,絶対の
-method,方法
-require,必要とする
-unique,個性的
-responsibility,責任
-gain,得る
-delay,遅れる
-economy,経済
-invest,投資する
-relate,関連する
-predict,予測する
-sensitive,敏感な
-emotion,感情
-identify,識別する
-value,価値
-manufacture,製造する
-climate,気候
-nutrition,栄養
-rate,割合
-modern,現代の
-explore,探検する
-reveal,明らかにする
-injure,傷つける
-proportion,割合
-religion,宗教
-tend,〜の傾向がある
-succeed,成功する
-familiar,精通している
-blame,非難する
-seldom,めったにない
-budget,予算
-adjust,調整する
-territory,領土
-organize,組織する
-pain,痛み
-prepare,準備する
-publish,出版する
-general,一般的な
-evidence,証拠
-generate,生成する
-permit,許可する
-cell,細胞
-respond,応答する
-principle,原理
-essential,必要不可欠な
-convince,納得させる
-diversity,多様性
-domestic,国内の
-
+devote,ささげる、専念する
+disrupt,崩壊させる
+distort,ゆがめる
+dominant,支配的な
+inclination,傾向、好み
+interrupt,妨害する
+locate,配置する
+mediator,媒介物
+optimize,最大限に活用する
+originate,生じる
+overwhelm,苦しめる、悩ませる
+parallel,類似した
+postulate,仮定する
+presume,仮定する、推定する
+property,特性
+rear,育てる
+render,与える、寄与する
+reproduce,再生する
+trigger,きっかけとなる
+undertake,引き受ける
+unify,統合する
