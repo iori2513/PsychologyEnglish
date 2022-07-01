@@ -10,11 +10,12 @@
   
 ## スクリーンショット
 
-![picture 1](images/68bbb475a6d73931624e5f748dbe8d764906dbdfda861f35a8e5805d7c71d7a5.png)  
-![picture 2](images/8d7f832bd01c8f0e34e8b627e9babf53ce855125a39377695439844d4f53f54a.png)  
+<img src = "images/68bbb475a6d73931624e5f748dbe8d764906dbdfda861f35a8e5805d7c71d7a5.png" width = "320px">
+
+<img src = "images/8d7f832bd01c8f0e34e8b627e9babf53ce855125a39377695439844d4f53f54a.png" width = "320px">
 
 ## 注意事項
 
-このアプリの単語データは出版されているある本から引用しているためAppStoreには公開していません。ですが、単語のデータを入れ替えたものをEnglishTrainingという名前でAppStoreに公開しております。　　
+このアプリの単語データは出版されているある本から引用しているためAppStoreには公開していません。ですが、単語のデータを入れ替えたものをEnglishTrainingという名前でAppStoreに公開しております。  
 URLはこちらです  
 https://apps.apple.com/jp/app/englishtraining/id1618582567
